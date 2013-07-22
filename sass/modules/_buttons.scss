@@ -1,6 +1,10 @@
 
 // Colors are wonky at the moment
 
+// Copied from my own library. Some styles are
+// irrelevant to us
+
+// general button style
 .button {
   background: $color-mint;
   border: 0;
@@ -28,6 +32,7 @@
   &:active {}
 }
 
+// call to action button style
 .button-action {
   background: $color-orange;
   font-size: .85em;
@@ -38,6 +43,7 @@
   &:active {}
 }
 
+// may be deleted
 .button-top-nav {
   background: none;
   line-height: 1;
@@ -49,12 +55,16 @@
     color: $color-blue-md;
   }
 }
+
+// may be deleted
 .button-return {
   display: block;
   margin: 0 auto;
   text-align: center;
   width: 30%;
 }
+
+// may be deleted
 .button-masthead {
   background: #fff;
   color: $color-blue-md;
@@ -64,4 +74,5 @@
   &:hover, &:focus { background: $color-mint; }
 }
 
+// disabled button style
 .disabled { color: $color-mint !important; }

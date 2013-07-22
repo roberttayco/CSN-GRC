@@ -15,3 +15,7 @@ $color-blue-lt: #e9f0f4;
 $color-blue-md: #658daa;
 
 
+// border radius for buttons - defaults to 4px
+@mixin button-radius($n: 4px) {
+   border-radius: $n;
+}

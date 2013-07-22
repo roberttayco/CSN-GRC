@@ -1,39 +1,44 @@
-.btn {
-  background: $color-logo-gray;
+
+// Colors are wonky at the moment
+
+.button {
+  background: $color-mint;
   border: 0;
   color: #fff;
   display: inline-block;
   font-family: $font-headings;
   font-size: .7em;
-  font-weight: 900;
-  letter-spacing: .05em;
+  // font-weight: 700;
+  letter-spacing: 1px;
   line-height: 1.5;
   margin: 1em 0;
   padding: 1em 1.25em;
   text-decoration: none;
   text-transform: uppercase;
 
+  @include button-radius;
+
   // &:visited { color: #fff; }
 
   &:hover, &:focus {
-    background: $color-logo-red;
+    background: $color-blue-lt;
     border: 0;
     color: #fff;
   }
   &:active {}
 }
 
-.btn-action {
-  background: $color-logo-red;
+.button-action {
+  background: $color-orange;
   font-size: .85em;
 
   &:hover, &:focus {
-    background: $color-logo-red-dk;
+    background: $color-blue-md;
   }
   &:active {}
 }
 
-.btn-top-nav {
+.button-top-nav {
   background: none;
   line-height: 1;
   padding: 1em 0;
@@ -41,22 +46,22 @@
 
   &:hover {
     background: #fff;
-    color: $color-logo-red;
+    color: $color-blue-md;
   }
 }
-.btn-return {
+.button-return {
   display: block;
   margin: 0 auto;
   text-align: center;
   width: 30%;
 }
-.btn-masthead {
+.button-masthead {
   background: #fff;
-  color: $color-logo-red;
+  color: $color-blue-md;
   margin: 1em 2em;
   padding: 1em 2em;
 
-  &:hover, &:focus { background: $color-logo-gray; }
+  &:hover, &:focus { background: $color-mint; }
 }
 
-.disabled { color: $color-bg-lt-gray !important; }
+.disabled { color: $color-mint !important; }

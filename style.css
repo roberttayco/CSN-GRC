@@ -59,24 +59,94 @@ body {
   font-size: 16px;
   line-height: 1.5; }
 
+#wrap {
+  background: white;
+  margin: 0 auto;
+  width: 1100px; }
+
+.button {
+  background: #aae7b0;
+  border: 0;
+  color: #fff;
+  display: inline-block;
+  font-family: "raleway", "helvetica neue", sans-serif;
+  font-size: .7em;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 1em 0;
+  padding: 1em 1.25em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px; }
+  .button:hover, .button:focus {
+    background: #e9f0f4;
+    border: 0;
+    color: #fff; }
+
+.button-action {
+  background: #ff905c;
+  font-size: .85em; }
+  .button-action:hover, .button-action:focus {
+    background: #658daa; }
+
+.button-top-nav {
+  background: none;
+  line-height: 1;
+  padding: 1em 0;
+  width: 100%; }
+  .button-top-nav:hover {
+    background: #fff;
+    color: #658daa; }
+
+.button-return {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 30%; }
+
+.button-masthead {
+  background: #fff;
+  color: #658daa;
+  margin: 1em 2em;
+  padding: 1em 2em; }
+  .button-masthead:hover, .button-masthead:focus {
+    background: #aae7b0; }
+
+.disabled {
+  color: #aae7b0 !important; }
+
+/* img replacement */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+  /* IE 6/7 fallback */ }
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+/* clearfix */
+.cf:before, .cf:after {
+  content: "";
+  display: table; }
+.cf:after {
+  clear: both; }
+
+/* for IE6/7 */
+.cf {
+  *zoom: 1; }
+
+.hidden {
+  display: none; }
+
 /************************* 
    Global Elements 
 *************************/
 /*** Frame ***/
-body {
-  margin: 0 auto; }
-
-#wrap {
-  background: #FFFFFF;
-  width: 1100px;
-  border-top: 0px solid #E8E8E8;
-  border-bottom: 0px solid #E8E8E8;
-  border-left: 0px solid #E8E8E8;
-  border-right: 0px solid #E8E8E8;
-  margin: 0px auto 0px;
-  padding: 0px 0px 0px 0px;
-  clear: both; }
-
 /*** Hyperlinks ***/
 a, a:visited {
   color: #BF3730;

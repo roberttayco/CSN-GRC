@@ -20,3 +20,17 @@ $color-blue-md: #658daa;
 @mixin button-radius($n: 4px) {
    border-radius: $n;
 }
+
+// @mixin article-fade {
+//   background-image: -moz-linear-gradient(top, transparentize($color-white, 1) 0, $color-white 100%);
+//   background-image: -webkit-linear-gradient(top, transparentize($color-white, 1) 0, $color-white 100%);
+//   background-image: linear-gradient(top, transparentize($color-white, 1) 0, $color-white 100%);
+//   background-size: 100%;
+//   bottom: 0;
+//   left: 0;
+//   content: '';
+//   display: block;
+//   position: absolute;
+//   height: 30%;
+//   width: 100%;
+// }

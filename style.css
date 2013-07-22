@@ -85,6 +85,9 @@ body {
   margin: 0 auto;
   width: 1100px; }
 
+.widget-wrap {
+  padding: 10px; }
+
 .button {
   background: #aae7b0;
   border: 0;

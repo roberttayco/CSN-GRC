@@ -4,19 +4,41 @@
 // article cards on home page
 .home {
 
-   article.post {
-      border: 1px solid #ddd;
-      width: 340px;
+   .php-textwidget {
 
-      .entry-image {
-         height: 200px;
+      article {
+         background: $color-white;
+         float: left;
+         margin: 10px;
          overflow: hidden;
-      }
-      .entry-content {
-         margin: 1em;
+         height: 480px;
+         width: 340px;
+
+         // &:after {
+         //    @include article-fade;
+         // }
       }
    }
 
+   // news articles
+   article.post {
+      border: 1px solid #ddd;
+
+      .entry-image {
+         max-height: 200px;
+         overflow: hidden;
+         
+         img {
+            min-width: 100%;
+            height: auto;
+         }
+      }
+      .entry-header,
+      .entry-content { margin: 1em; }
+
+   }
+
+   // calendar events
    article.event {
 
    }

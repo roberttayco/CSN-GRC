@@ -2,6 +2,8 @@
 *.php
 
 design/
+css/
+
 codekit-config.json
 
 *.html

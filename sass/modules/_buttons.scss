@@ -2,17 +2,18 @@
 // Colors are wonky at the moment
 
 // Copied from my own library. Some styles are
-// irrelevant to us
+// irrelevant to us (RT)
 
 // general button style
+// This is the base class for a button. Add one of the other
+// classes below in addition to the base class to style further.
 .button {
-  background: $color-mint;
+  background: $color-mint; // check color
   border: 0;
-  color: #fff;
+  color: $color-white;
   display: inline-block;
   font-family: $font-headings;
   font-size: .7em;
-  // font-weight: 700;
   letter-spacing: 1px;
   line-height: 1.5;
   margin: 1em 0;
@@ -25,20 +26,20 @@
   // &:visited { color: #fff; }
 
   &:hover, &:focus {
-    background: $color-blue-lt;
+    background: $color-blue-lt; // check color
     border: 0;
-    color: #fff;
+    color: $color-white; // check color
   }
   &:active {}
 }
 
 // call to action button style
 .button-action {
-  background: $color-orange;
+  background: $color-orange; // check color
   font-size: .85em;
 
   &:hover, &:focus {
-    background: $color-blue-md;
+    background: $color-blue-md; // check color
   }
   &:active {}
 }
@@ -52,7 +53,7 @@
 
   &:hover {
     background: #fff;
-    color: $color-blue-md;
+    color: $color-blue-md; // check color
   }
 }
 
@@ -67,12 +68,12 @@
 // may be deleted
 .button-masthead {
   background: #fff;
-  color: $color-blue-md;
+  color: $color-blue-md; // check color
   margin: 1em 2em;
   padding: 1em 2em;
 
-  &:hover, &:focus { background: $color-mint; }
+  &:hover, &:focus { background: $color-mint; } // check color
 }
 
 // disabled button style
-.disabled { color: $color-mint !important; }
+.disabled { color: $color-mint !important; } // check color

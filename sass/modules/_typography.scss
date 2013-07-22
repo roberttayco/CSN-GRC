@@ -17,24 +17,18 @@ $font-copy: 'lato', 'helvetica neue', sans-serif;
 h1,h2,h3,h4,h5,h6 {
    font-family: $font-headings;
    font-weight: $font-bold;
+   margin-bottom: 10px;
 }
-h1,h2,h3 { line-height: 1; }
+h1,h2,h3 { line-height: 1.2; }
+h1,h2 { font-weight: $font-normal; }
+h5,h6 { text-transform: uppercase; }
 
-h1 {
-   font-size: 42px;
-}
-h2 {
-   font-size: 36px;
-}
-h3 {
-   font-size: 32px;
-}
-h4 {
-   font-size: 1em;
-}
-h5 {
-   font-size: 1em;
-}
-h6 {
-   font-size: 1em;
-}
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 30px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 16px; }
+
+// Basic type
+p { font-size: $font-size-base; }

@@ -4,16 +4,17 @@
 // article cards on home page
 .home {
 
+   // This is the base overall styling for <article> tags on the home page
    .php-textwidget {
-
       article {
          background: $color-white;
          float: left;
          margin: 10px;
          overflow: hidden;
-         height: 480px;
+         height: 480px; // This crops off a long article excerpt. Read more link is unnecessary with this.
          width: 340px;
 
+         p { font-size: $font-size-base; }
          // &:after {
          //    @include article-fade;
          // }
@@ -23,6 +24,8 @@
    // news articles
    article.post {
       border: 1px solid #ddd;
+
+      @include box-sizing;
 
       .entry-image {
          max-height: 200px;

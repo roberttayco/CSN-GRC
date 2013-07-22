@@ -20,6 +20,11 @@ $color-blue-md: #658daa;
 @mixin button-radius($n: 4px) {
    border-radius: $n;
 }
+@mixin box-sizing {
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+}
 
 // @mixin article-fade {
 //   background-image: -moz-linear-gradient(top, transparentize($color-white, 1) 0, $color-white 100%);

@@ -1,4 +1,5 @@
 *.scssc
+*.php
 
 design/
 codekit-config.json

@@ -1,3 +1,6 @@
 *.scssc
 
 design/
+codekit-config.json
+
+*.html

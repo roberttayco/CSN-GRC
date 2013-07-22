@@ -1,0 +1,62 @@
+.btn {
+  background: $color-logo-gray;
+  border: 0;
+  color: #fff;
+  display: inline-block;
+  font-family: $font-headings;
+  font-size: .7em;
+  font-weight: 900;
+  letter-spacing: .05em;
+  line-height: 1.5;
+  margin: 1em 0;
+  padding: 1em 1.25em;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  // &:visited { color: #fff; }
+
+  &:hover, &:focus {
+    background: $color-logo-red;
+    border: 0;
+    color: #fff;
+  }
+  &:active {}
+}
+
+.btn-action {
+  background: $color-logo-red;
+  font-size: .85em;
+
+  &:hover, &:focus {
+    background: $color-logo-red-dk;
+  }
+  &:active {}
+}
+
+.btn-top-nav {
+  background: none;
+  line-height: 1;
+  padding: 1em 0;
+  width: 100%;
+
+  &:hover {
+    background: #fff;
+    color: $color-logo-red;
+  }
+}
+.btn-return {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 30%;
+}
+.btn-masthead {
+  background: #fff;
+  color: $color-logo-red;
+  margin: 1em 2em;
+  padding: 1em 2em;
+
+  &:hover, &:focus { background: $color-logo-gray; }
+}
+
+.disabled { color: $color-bg-lt-gray !important; }

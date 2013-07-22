@@ -1,0 +1,21 @@
+// Typography
+// ==================
+// weights
+$font-light: 200;
+$font-normal: 400;
+$font-bold: 700;
+
+// type sizing
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+// fonts
+$font-headings: 'raleway', 'helvetica neue', sans-serif;
+$font-copy: 'lato', 'helvetica neue', sans-serif;
+
+// Headings
+h1,h2,h3,h4,h5,h6 {
+   font-family: $font-headings;
+   font-weight: $font-bold;
+}
+

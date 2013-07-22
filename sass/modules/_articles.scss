@@ -1,0 +1,23 @@
+// Styling for articles
+// ====================
+
+// article cards on home page
+.home {
+
+   article.post {
+      border: 1px solid #ddd;
+      width: 340px;
+
+      .entry-image {
+         height: 200px;
+         overflow: hidden;
+      }
+      .entry-content {
+         margin: 1em;
+      }
+   }
+
+   article.event {
+
+   }
+}

@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Raleway:400,700");
 /*
 Theme Name: CSN GRC
 Theme URI:
@@ -7,9 +8,6 @@ Author URI:
 Template: catalyst
 Version: 1
 */
-
-@import url("http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Raleway:400,700");
-
 /* Meyer reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -883,9 +881,8 @@ body.page-template-template-blog-php .post-format-icon {
 .widget_pages a:hover {
   text-decoration: none !important; }
 
-/************************* 
-   Footer
-*************************/
+/*   Footer
+=========================*/
 #footer-wrap {
   background: #222222;
   margin: 0 auto;

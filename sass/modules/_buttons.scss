@@ -6,17 +6,6 @@
 // This is the base class for a button. Add one of the other
 // classes below in addition to the base class to style further.
 .button {
-  background: colorize($color-accent2, l2);
-  background-image: -webkit-linear-gradient(top, colorize($color-accent2, l2), colorize($color-accent2, l1));
-  background-image: -moz-linear-gradient(top, colorize($color-accent2, l2), colorize($color-accent2, l1));
-  background-image: -ms-linear-gradient(top, colorize($color-accent2, l2), colorize($color-accent2, l1));
-  background-image: -o-linear-gradient(top, colorize($color-accent2, l2), colorize($color-accent2, l1));
-  background-image: linear-gradient(top, colorize($color-accent2, l2), colorize($color-accent2, l1));
-
-  -webkit-box-shadow: 0 2px 0 0 colorize($color-accent2, d2);
-     -moz-box-shadow: 0 2px 0 0 colorize($color-accent2, d2);
-          box-shadow: 0 2px 0 0 colorize($color-accent2, d2);
-
   color: $color-white;
   display: inline-block;
   font-family: $font-headings;
@@ -28,25 +17,41 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  @include button-gradient($color-accent2);
+  @include button-box-shadow($color-accent2);
   @include button-radius;
 
-  &:visited { color: #fff; }
-  &:hover, &:focus { background: $color-accent2; }
+  &:visited { color: $color-white; }
+  &:hover, &:focus {
+    background: $color-accent2;
+    color: $color-white;
+  }
   &:active {}
 }
 
 // call to action button style
 .button-action {
-  background: $color-orange; // check color
-  font-size: .85em;
+  @include button-gradient($color-accent1);
+  @include button-box-shadow($color-accent1);
 
   &:hover, &:focus {
-    background: $color-blue-md; // check color
+    background: $color-accent1;
   }
   &:active {}
 }
 
+// I don't know what this is
+//
+// .button-return {
+//   display: block;
+//   margin: 0 auto;
+//   text-align: center;
+//   width: 30%;
+// }
+
 // disabled button style
+// not sure if used, check styles.
 .disabled {
-  color: $color-mint !important;
+  background: #ccc;
+  color: $color-white !important;
 }

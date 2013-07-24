@@ -4,10 +4,10 @@
 //    Colors
 // ==================
 $color-white: #fff;
-$color-bg-lt: #f4f1f0;
-$color-type: #444;
-$color-accent1: #bf3730;
-$color-accent2: #277f7f;
+$color-bg-lt: #f4f1f0;   // very light warm grey
+$color-type: #444;       // very dark neutral grey
+$color-accent1: #bf3730; // red
+$color-accent2: #277f7f; // teal
 
 // below are older colors that need to be changed
 $color-mint: #aae7b0;
@@ -27,6 +27,22 @@ $color-blue-md: #658daa;
       -moz-box-sizing: border-box;
            box-sizing: border-box;
 }
+
+@mixin button-gradient($color) {
+   background: colorize($color, l2);
+   background-image: -webkit-linear-gradient(top, colorize($color, l2), colorize($color, l1));
+   background-image: -moz-linear-gradient(top, colorize($color, l2), colorize($color, l1));
+   background-image: -ms-linear-gradient(top, colorize($color, l2), colorize($color, l1));
+   background-image: -o-linear-gradient(top, colorize($color, l2), colorize($color, l1));
+   background-image: linear-gradient(top, colorize($color, l2), colorize($color, l1));
+}
+
+@mixin button-box-shadow($color) {
+  -webkit-box-shadow: 0 2px 0 0 colorize($color, d2);
+     -moz-box-shadow: 0 2px 0 0 colorize($color, d2);
+          box-shadow: 0 2px 0 0 colorize($color, d2);
+}
+
 
 // Functions
 

@@ -771,63 +771,36 @@ a:hover {
 
 /* Buttons */
 
-.button {
-   background-color: #369998;
-   background-image: linear-gradient(transparent 50%, #277f7f 50%);
-   background-size: 50px 50px;
-   border: 0;
-   color: white;
-   display: inline-block;
-   font-family: "raleway", "helvetica neue", sans-serif;
-   font-size: 14px;
-   letter-spacing: 1px;
-   line-height: 1.5;
-   margin: 2em 0;
-   padding: 1em 1.25em;
-   text-decoration: none;
-   text-transform: uppercase;
-   border-radius: 4px; }
+// .button {
+//    background-color: #369998;
+//    background-image: linear-gradient(transparent 50%, #277f7f 50%);
+//    background-size: 50px 50px;
+//    border: 0;
+//    color: white;
+//    display: inline-block;
+//    font-family: "raleway", "helvetica neue", sans-serif;
+//    font-size: 14px;
+//    letter-spacing: 1px;
+//    line-height: 1.5;
+//    margin: 2em 0;
+//    padding: 1em 1.25em;
+//    text-decoration: none;
+//    text-transform: uppercase;
+//    border-radius: 4px; }
   
-.button:hover, .button:focus {
-    background-color: #277f7f;
-   background-image: linear-gradient(transparent 50%, #369998 50%);
-    border: 0;
-    color: white; }
+// .button:hover, .button:focus {
+//     background-color: #277f7f;
+//    background-image: linear-gradient(transparent 50%, #369998 50%);
+//     border: 0;
+//     color: white; }
 
-.button-action {
-   background: #369998;
-   font-size: .85em; }
+// .button-action {
+//    background: #369998;
+//    font-size: .85em; }
 
-.button-action:hover, .button-action:focus {
-    background: #277f7f; }
+// .button-action:hover, .button-action:focus {
+//     background: #277f7f; }
 
-.button-top-nav {
-   background: none;
-   line-height: 1;
-   padding: 1em 0;
-   width: 100%; }
-  
-.button-top-nav:hover {
-    background: #fff;
-    color: #658daa; }
-
-.button-return {
-   display: block;
-   margin: 0 auto;
-   text-align: center;
-   width: 30%; }
-
-.button-masthead {
-   background: #fff;
-   color: #658daa;
-   margin: 1em 2em;
-   padding: 1em 2em; }
-  
-.button-masthead:hover, .button-masthead:focus {
-    background: #aae7b0; }
-
-.disabled {
-  color: #aae7b0 !important; }
 
 article {
    position: relative;

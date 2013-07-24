@@ -54,15 +54,6 @@ body {
 /* Buttons
    ============== */
 .button {
-  background: #5d9f9f;
-  background-image: -webkit-linear-gradient(top, #5d9f9f, #3c8b8b);
-  background-image: -moz-linear-gradient(top, #5d9f9f, #3c8b8b);
-  background-image: -ms-linear-gradient(top, #5d9f9f, #3c8b8b);
-  background-image: -o-linear-gradient(top, #5d9f9f, #3c8b8b);
-  background-image: linear-gradient(top, #5d9f9f, #3c8b8b);
-  -webkit-box-shadow: 0 2px 0 0 #1d5f5f;
-  -moz-box-shadow: 0 2px 0 0 #1d5f5f;
-  box-shadow: 0 2px 0 0 #1d5f5f;
   color: white;
   display: inline-block;
   font-family: "raleway", "helvetica neue", sans-serif;
@@ -73,20 +64,38 @@ body {
   padding: 1em 1.25em;
   text-decoration: none;
   text-transform: uppercase;
+  background: #5d9f9f;
+  background-image: -webkit-linear-gradient(top, #5d9f9f, #3c8b8b);
+  background-image: -moz-linear-gradient(top, #5d9f9f, #3c8b8b);
+  background-image: -ms-linear-gradient(top, #5d9f9f, #3c8b8b);
+  background-image: -o-linear-gradient(top, #5d9f9f, #3c8b8b);
+  background-image: linear-gradient(top, #5d9f9f, #3c8b8b);
+  -webkit-box-shadow: 0 2px 0 0 #1d5f5f;
+  -moz-box-shadow: 0 2px 0 0 #1d5f5f;
+  box-shadow: 0 2px 0 0 #1d5f5f;
   border-radius: 4px; }
   .button:visited {
-    color: #fff; }
+    color: white; }
   .button:hover, .button:focus {
-    background: #277f7f; }
+    background: #277f7f;
+    color: white; }
 
 .button-action {
-  background: #ff905c;
-  font-size: .85em; }
+  background: #cf6963;
+  background-image: -webkit-linear-gradient(top, #cf6963, #c54b44);
+  background-image: -moz-linear-gradient(top, #cf6963, #c54b44);
+  background-image: -ms-linear-gradient(top, #cf6963, #c54b44);
+  background-image: -o-linear-gradient(top, #cf6963, #c54b44);
+  background-image: linear-gradient(top, #cf6963, #c54b44);
+  -webkit-box-shadow: 0 2px 0 0 #8f2924;
+  -moz-box-shadow: 0 2px 0 0 #8f2924;
+  box-shadow: 0 2px 0 0 #8f2924; }
   .button-action:hover, .button-action:focus {
-    background: #658daa; }
+    background: #bf3730; }
 
 .disabled {
-  color: #aae7b0 !important; }
+  background: #ccc;
+  color: white !important; }
 
 .home .php-textwidget article {
   background: white;

@@ -1,4 +1,5 @@
-/* RESET */
+
+/* Meyer reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,4 +33,10 @@ table {
 }
 
 // This might screw up the Catalyst styling not expecting this
-* { -moz-box-sizing: border-box; box-sizing: border-box; }
+* {
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+}
+
+/* end reset */

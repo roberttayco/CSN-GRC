@@ -13,8 +13,8 @@
   height: 150%;
 }
 
-/* clearfix */
-.cf {
+/* micro clearfix */
+.clearfix {
   &:before, &:after {
     content: "";
     display: table;
@@ -22,6 +22,6 @@
   &:after { clear: both; }
 }
 /* for IE6/7 */
-.cf { *zoom: 1; } 
+.clearfix { *zoom: 1; } 
 
 .hidden { display: none; }

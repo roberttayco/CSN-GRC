@@ -1,36 +1,26 @@
 /*
-Theme Name:     GRC CSN 2013
-Theme URI:      http: //catalysttheme.com/
-Description:    A Catalyst Child Theme 
-Author:         Graphic Communications
-Author URI:     
-Template:       catalyst
-Version:        1.0
+Theme Name: CSN GRC
+Theme URI:
+Description: Custom theme developed for College of Southern Nevada's Graphic Communications program. Based on Catalyst framework.
+Author: Graphic Communications
+Author URI: 
+Template: catalyst
+Version: 1
 */
 
 @import url('http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Raleway:400,700');
 
-/* reset css */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-   margin: 0; padding: 0; outline: 0;
-}
+@import "config";
+@import "modules/reset-meyer";
+@import "modules/typography";
+@import "general";
 
-/* Remove possible quote marks (") from <q>, <blockquote>. */
-blockquote:before, blockquote:after, q:before, q:after { content: ""; }
-blockquote, q { quotes: "" ""; }
+@import "modules/buttons";
 
-/* clearfix css */
-.clearfix:after { visibility: hidden; display: block; height: 0; font-size: 0; line-height: 0; content: " "; clear: both; }
-.clearfix { display: block; }
-/* IE6 */
-* html .clearfix { height: 1%; }
-/* IE7 */
-*:first-child + html .clearfix { min-height: 1%; }
+@import "modules/intro-text";
 
-/* HTML5 display rule */
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-   display: block;
-}
+
+
 
 /************************* 
    Global Elements 
@@ -166,163 +156,9 @@ body.page-template-template-blog-php .post-format-icon {
    
 }
 
-/************************* 
-   Header 
-*************************/
 
-#header-wrap {
-   background: #FFFFFF;
-   margin: 0 auto;
-   clear: both;
-}
-#header {
-   position: relative;
-   width: 100%;
-   height: 520px;
-   margin: 0 auto;
-   padding: 0;
-   float: none;
-   overflow: hidden;
-}
+@import "modules/header";
 
-#tagline {
-   margin: 0;
-   padding: 8px 0 0; 
-}
-.logo-image #header #header-left {
-   margin: 0px 0 0 0px;
-   position: absolute;
-   top: 60px;
-   width: 100%;;
-   height: 160px;
-   padding: 0;
-   text-indent: -9999px;
-   overflow: visible;
-   z-index: 20;
-}
-
- .logo-image #header-left #title {
-   width: 1100px;
-   height: 160px;
-   margin: 0 auto;
- }
- 
- .logo-image #header-left #title a {
-   width: 100px;
-   margin-left: 20px;
-   background: url(images/logo.png) left top no-repeat;
-   height: 520px;
-   display: block;
-   position: relative;
-   top: -60px;
-   left: 20px;
- }
-
-.logo-image #header-left #tagline {
-   display: block;
-   overflow: hidden;
-}
-#header-right {
-   width: 100%;
-   padding: 0px 0px 0 0;
-   position: absolute;
-   top: 0;
-   background-color: #222;
-   height: 60px;
-}
-#header-right p {
-   margin: 0;
-   padding: 0 0 5px 0;
-}
-
-#header-right img {
-   display: block;
-}
-.header-left-full-width #header-left, .header-left-full-width #header-left #title, .header-left-full-width #header-left #title a {
-   width: 100px;
-}
-
-.headerbottom {
-   width: 100%;
-   height: 460px;
-   position: absolute;
-   bottom: 0;
-   z-index: 0;
-}
-
-.headerbottom .heroimage {
-   width: 100%;
-   position: absolute;
-   top: 0;
-   overflow: hidden;
-   height: 400px;
-   min-width: 1100px;
-   background: url(http://grc.annemichelledavis.com/wp-content/gallery/header-images/logodesign.jpg) top center no-repeat;
-   background-size: 100%;
-}
-
-
-
-.headerbottom .subnav {
-   width: 100%;
-   position: absolute;
-   bottom: 0;
-   background-color: #d94941;
-   z-index: 100;
-   height: 60px;
-   margin: 0;
-   padding: 0;
-}
-
-.headerbottom .subnav ul {
-   width: 1100px;
-   margin: 0 auto;
-   padding: 0;
-}
-
-.headerbottom .subnav ul li {
-   display: inline-block;
-   padding: 20px 15px;
-}
-
-.headerbottom .subnav ul li a {
-   color: #fff;
-   
-}
-
-
-.headerbottom .quicklinks {
-  width: 100%;
-  position: absolute;
-  top:0;
-  z-index: 30;
-}
-
-.headerbottom .quicklinks .menu-quick-links-container {
-   width: 1100px;
-   margin: 0 auto;
-}
-
-.quicklinks ul {
-   float: right;
-   margin-right: 20px;
-   font-size: 14px;
-}
-
-.quicklinks ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 8px 10px 12px; }
-
-.quicklinks ul li a {
-  color: #fff; }
-
-.titleoverlay {
-    position: absolute; 
-    width: 100%; 
-    bottom: 50px;  
-    z-index: 30;  
-}
 
 /************************* 
    Navigation 
@@ -1369,3 +1205,5 @@ article .entry-content .readmore {
     min-height: 150px;
     margin: 0 0 20px 0;
 }
+
+@import "modules/utility";

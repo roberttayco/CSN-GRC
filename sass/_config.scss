@@ -6,6 +6,8 @@
 $color-white: #fff;
 $color-bg-lt: #f4f1f0;
 $color-type: #444;
+$color-accent1: #bf3730;
+$color-accent2: #277f7f;
 
 // below are older colors that need to be changed
 $color-mint: #aae7b0;
@@ -24,6 +26,39 @@ $color-blue-md: #658daa;
    -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
            box-sizing: border-box;
+}
+
+// Functions
+
+// Tint or shade a color set amounts
+@function colorize($color, $change: n) {
+  @if $change == n {
+    @return $color;
+  }
+  @if $change == l1 {
+    @return tint($color, 10%);
+  }
+  @if $change == l2 {
+    @return tint($color, 25%);
+  }
+  @if $change == l3 {
+    @return tint($color, 50%);
+  }
+  @if $change == l4 {
+    @return tint($color, 75%);
+  }
+  @if $change == d1 {
+    @return shade($color, 10%);
+  }
+  @if $change == d2 {
+    @return shade($color, 25%);
+  }
+  @if $change == d3 {
+    @return shade($color, 50%);
+  }
+  @if $change == d4 {
+    @return shade($color, 75%);
+  }
 }
 
 // @mixin article-fade {

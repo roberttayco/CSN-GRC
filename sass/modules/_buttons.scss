@@ -1,19 +1,26 @@
 
-// Colors are wonky at the moment
-
-// Copied from my own library. Some styles are
-// irrelevant to us (RT)
+/* Buttons
+   ============== */
 
 // general button style
 // This is the base class for a button. Add one of the other
 // classes below in addition to the base class to style further.
 .button {
-  background: $color-mint; // check color
-  border: 0;
+  background: colorize($color-accent2, l2);
+  background-image: -webkit-linear-gradient(top, colorize($color-accent2, l2), colorize($color-accent2, l1));
+  background-image: -moz-linear-gradient(top, colorize($color-accent2, l2), colorize($color-accent2, l1));
+  background-image: -ms-linear-gradient(top, colorize($color-accent2, l2), colorize($color-accent2, l1));
+  background-image: -o-linear-gradient(top, colorize($color-accent2, l2), colorize($color-accent2, l1));
+  background-image: linear-gradient(top, colorize($color-accent2, l2), colorize($color-accent2, l1));
+
+  -webkit-box-shadow: 0 2px 0 0 colorize($color-accent2, d2);
+     -moz-box-shadow: 0 2px 0 0 colorize($color-accent2, d2);
+          box-shadow: 0 2px 0 0 colorize($color-accent2, d2);
+
   color: $color-white;
   display: inline-block;
   font-family: $font-headings;
-  font-size: .7em;
+  font-size: .75em;
   letter-spacing: 1px;
   line-height: 1.5;
   margin: 1em 0;
@@ -23,13 +30,8 @@
 
   @include button-radius;
 
-  // &:visited { color: #fff; }
-
-  &:hover, &:focus {
-    background: $color-blue-lt; // check color
-    border: 0;
-    color: $color-white; // check color
-  }
+  &:visited { color: #fff; }
+  &:hover, &:focus { background: $color-accent2; }
   &:active {}
 }
 
@@ -44,36 +46,7 @@
   &:active {}
 }
 
-// may be deleted
-.button-top-nav {
-  background: none;
-  line-height: 1;
-  padding: 1em 0;
-  width: 100%;
-
-  &:hover {
-    background: #fff;
-    color: $color-blue-md; // check color
-  }
-}
-
-// may be deleted
-.button-return {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  width: 30%;
-}
-
-// may be deleted
-.button-masthead {
-  background: #fff;
-  color: $color-blue-md; // check color
-  margin: 1em 2em;
-  padding: 1em 2em;
-
-  &:hover, &:focus { background: $color-mint; } // check color
-}
-
 // disabled button style
-.disabled { color: $color-mint !important; } // check color
+.disabled {
+  color: $color-mint !important;
+}

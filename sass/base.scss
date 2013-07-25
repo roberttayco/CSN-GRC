@@ -31,7 +31,15 @@ body {
    background: #FFFFFF;
    width: 100%;
    margin: 0 auto;
+   
 }
+/* Fix 100% Width Display on Tablets & Mobile */
+@media only screen and (max-width: 1100px) {
+body {
+	width: 1100px;
+}
+}
+
 #wrap {
    background: #FFFFFF;
    width: 100%;

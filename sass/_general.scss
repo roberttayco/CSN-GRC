@@ -8,11 +8,13 @@ body {
    line-height: $line-height-base;
 }
 
+// don't know what this is
 #wrap {
    background: $color-white;
    margin: 0 auto;
    width: 1100px;
 }
+
 
 // This seems to be the content chunk
 .widget-wrap { padding: 10px; }

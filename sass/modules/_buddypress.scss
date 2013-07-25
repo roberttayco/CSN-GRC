@@ -1,17 +1,144 @@
-#member-list>li {
-   width: 33%;
-   float: left;
+#content #text-7 p {
+padding: 0;
 }
 
-#member-list>li:nth-child(4), #member-list>li:nth-child(7) {
+#buddypress #member-list {
+border: none;
+}
+
+#content #buddypress ul.item-list>li, #member-list .profile-card {
+   width: 32%;
+  float: left;
+  margin: 0 1% 10px 0;
+  padding: 0 0 20px 0;
+  background-color: $color-medium-beige;
+  position: relative;
+  border: solid 1px #ddd;
+}
+
+#member-list .profile-card:nth-child(4), #member-list .profile-card:nth-child(7) {
    clear: left;
 }
 
 .part-time, .full-time {
    clear: left;
+   margin-top: 20px;
 }
 
-#buddypress #item-header {
+/* #buddypress #item-header {
    width: 30%;
    float: right;
+}*/
+
+#buddypress #member-list .profile-card h4 {
+    font-weight: 400;
+  font-size: 14px;
+  width: auto;
+  float: left;
+  text-transform: uppercase;
+  position: relative;
+  margin-right: 10px;
+  color: #fff;
+  padding-right: 5px;
+}
+
+#content .profile-card h5 {
+    font-weight: 400;
+  font-size: 14px;
+  width: auto;
+  float: left;
+  text-transform: uppercase;
+  position: relative;
+  margin-right: 0;
+  color: #fff;
+  padding-right: 0;
+}
+
+.profile-card .profile-header a {
+    color: #fff;
+}
+#buddypress #member-list .profile-card h4:after {
+    display: block;
+    content: ' | ';
+    position: absolute;
+    right: -5px;
+    top: 0;
+}
+
+#member-list .profile-header {
+    background-color: $color-accent1-light;
+    height: 28px;
+    padding: 5px 0 0 10px;
+    /* margin-right: 10px; */
+}
+.profile-body, .profile-body p {
+    padding: 5px;
+    font-size: 14px;
+}
+#content #buddypress ul.item-list li img.avatar {
+    float: right;
+    margin: 0;
+    border: solid 1px #ddd;
+}
+.profile-card .viewprofile {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+#content #buddypress #member-list .course {
+    clear: left;
+  padding: 0;
+  border: none;
+  padding: 10px 0 0 0;
+}
+
+.profile-card .coursestaught {
+    clear: both;
+    margin: 0 0 0 8px;
+}
+.profile-card .coursenumber {
+    float: left;
+    margin-right: 5px;
+    font-weight: 600;
+}
+.profile-card .coursedetails {
+    clear: left;
+}
+.profile-card .coursetitle {
+    font-weight: 600;
+}
+#content #buddypress .coursedetails ul li {
+float: left;
+  position: relative;
+  display: block;
+  margin-right: 6px;
+  padding: 0 5px 0 0;
+  border: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.coursedetails li:after {
+    display:  block;
+    content: ' | ';
+    position: absolute;
+    top: 0px;
+    right: -3px;
+}
+.coursedetails li:nth-last-child(1):after {
+    display:  none;
+}
+
+#content .coursestaught ul {
+    padding: 0;
+}
+.full-time .profile-card {
+    min-height: 550px;
+}
+.part-time .profile-card {
+    min-height: 350px;
+}
+
+#member-list .profile-body p {
+    padding: 0;
 }

@@ -783,7 +783,7 @@ letter-spacing: 1px;
 @import "modules/utility";
 
 
-#sidebar-1-wrap .widgetttitle {
+.widgettitle, #sidebar-1-wrap .widgetttitle {
 background-color: #d94941;
 border: solid 1px #bf3730;
 color: #fff;

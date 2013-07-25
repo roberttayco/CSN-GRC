@@ -4,30 +4,59 @@
 //    Colors
 // ==================
 $color-white: #fff;
-$color-bg-lt: #f4f1f0;   // very light warm grey
-$color-type: #444;       // very dark neutral grey
-$color-accent1: #bf3730; // red
-$color-accent2: #277f7f; // teal
+<<<<<<< HEAD
+$color-bg-lt: #f4f2f1;       // very light warm grey
+$color-type: #444;           // very dark neutral grey
+$color-charcoal: #222;       // super dark grey
+$color-charcoal-dk: #191919; // super dark grey++
+$color-accent1: #bf3730;     // red
+$color-accent2: #277f7f;     // teal
+
+$color-accent1-light: #d94941; // light red
+$color-accent2-light: #369998; // teal
+
+// Misc Variables
+// ==================
+$container-width: 1100px;
+$transition-duration: 250ms;
+
 
 // below are older colors that need to be changed
-$color-mint: #aae7b0;
-$color-orange: #ff905c;
+=======
+$color-bg-lt: #f4f2f1;   // very light warm grey
+$color-type: #444;       // very dark neutral grey
+$color-accent1: #bf3730; // red
+$color-accent1-light: #d94941; // light red
+$color-accent2: #277f7f; // teal
+$color-accent2-light: #369998; // teal
+
+// below are older colors that need to be changed
 $color-charcoal: #222;
+>>>>>>> b908e0bbd708f725a39d335b24dbd1da3e188cf6
 $color-gray-dk: #6c7880;
-$color-blue-lt: #e9f0f4;
-$color-blue-md: #658daa;
+$color-dark-red: #bf3730;
+$color-light-red: #d94941;
+$color-dark-blue: #277f7f;
+$color-light-blue: #369998;
+$color-light-beige: #e5e4e3;
+$color-medium-beige: #f4f2f1;
 
 
-// border radius for buttons - defaults to 4px
-@mixin button-radius($n: 4px) {
-   border-radius: $n;
-}
+
+//    Mixins
+// ==================
 @mixin box-sizing {
    -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
            box-sizing: border-box;
 }
 
+// buttons
+// -------------
+// border radius for buttons - defaults to 4px
+@mixin button-radius($n: 4px) { border-radius: $n; }
+
+// button gradient builder
 @mixin button-gradient($color) {
    background: colorize($color, l2);
    background-image: -webkit-linear-gradient(top, colorize($color, l2), colorize($color, l1));
@@ -37,14 +66,25 @@ $color-blue-md: #658daa;
    background-image: linear-gradient(top, colorize($color, l2), colorize($color, l1));
 }
 
+// box shadow under button (3D effect)
 @mixin button-box-shadow($color) {
   -webkit-box-shadow: 0 2px 0 0 colorize($color, d2);
      -moz-box-shadow: 0 2px 0 0 colorize($color, d2);
           box-shadow: 0 2px 0 0 colorize($color, d2);
 }
 
+@mixin transition-color($duration) {
+   -webkit-transition: color $duration linear;
+           transition: color $duration linear;
+}
+@mixin transition-bg($duration) {
+   -webkit-transition: background $duration linear;
+           transition: background $duration linear;
+}
 
-// Functions
+
+//    Functions
+// ==================
 
 // Tint or shade a color set amounts
 @function colorize($color, $change: n) {
@@ -58,10 +98,10 @@ $color-blue-md: #658daa;
     @return tint($color, 25%);
   }
   @if $change == l3 {
-    @return tint($color, 50%);
+    @return tint($color, 35%);
   }
   @if $change == l4 {
-    @return tint($color, 75%);
+    @return tint($color, 50%);
   }
   @if $change == d1 {
     @return shade($color, 10%);
@@ -70,23 +110,9 @@ $color-blue-md: #658daa;
     @return shade($color, 25%);
   }
   @if $change == d3 {
-    @return shade($color, 50%);
+    @return shade($color, 35%);
   }
   @if $change == d4 {
-    @return shade($color, 75%);
+    @return shade($color, 50%);
   }
 }
-
-// @mixin article-fade {
-//   background-image: -moz-linear-gradient(top, transparentize($color-white, 1) 0, $color-white 100%);
-//   background-image: -webkit-linear-gradient(top, transparentize($color-white, 1) 0, $color-white 100%);
-//   background-image: linear-gradient(top, transparentize($color-white, 1) 0, $color-white 100%);
-//   background-size: 100%;
-//   bottom: 0;
-//   left: 0;
-//   content: '';
-//   display: block;
-//   position: absolute;
-//   height: 30%;
-//   width: 100%;
-// }

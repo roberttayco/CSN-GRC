@@ -9,3 +9,5 @@ codekit-config.json
 *.html
 
 *.png
+
+base.css

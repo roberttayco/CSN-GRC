@@ -2,28 +2,21 @@
 /*   Footer
 =========================*/
 
-#footer-wrap {
-   background: #222222;
-   margin: 0 auto;
-   clear: both;
+#footer-wrap {}
+
+footer {
+
+   h4 { color: colorize($color-accent2, l3); }
+
+   a, a:visited { color: colorize($color-bg-lt, d1); } 
+   a:hover, a:active { color: $color-accent1; }
+
+   .contactinfo {
+      p { color: colorize($color-accent2, l3); }
+   }
+
 }
-#footer {
-   width: 1100px;
-   height: auto;
-   margin: 0 auto;
-   padding: 0;
-   clear: both;
-   float: none;
-   display: block;
-}
-#footer p.footer-content {
-   font-size: 14px;
-   
-}
-#footer a, #footer a:visited {
-   color: #FFFFFF;
-   text-decoration: none;
-}
+
 #footer .footer-content a:hover {
    color: #59B2B2;
    text-decoration: none;
@@ -33,52 +26,70 @@
     background-color: transparent;
     color: #ffffff;
 }
-.footerlogo {
-    width: 100px;
-    height: 160px;
-    background: url(images/logo.png) left top no-repeat;
-    margin: 0 20px;
-    
-    float:  left;
+.footerlogo a {
+   background: url(images/logo.png) left top no-repeat;
+   display: block;
+   height: 158px;
+   width: 100px;
 }
 #footer .widget-wrap {
     padding: 0;
 }
 #footer .contactinfo {
-    width: 26%;
-    float: left;
-    margin: 2%;
+    width: 20%;
 }
 
 #footer .social {
     width: 20%;
-    float: left;
-    margin: 2%;
 }
 
 #footer .concentrations {
     width: 15%;
-    float: left;
-    margin: 2%;
 }
 
 #footer .menu-main-menu-container {
     width: 10%;
-    margin: 2%;
-    float: left;
 }
-.footerbottom {
-    clear: left;
-    padding: 5px;
-}
+
 .footertop {
-    overflow: auto;
+   $logo-padding-top: 1.5em;
+
+   background: $color-charcoal;
+   padding: $logo-padding-top 0;
+
+   .container > div {
+      float: left;
+      margin: 0 2%;
+
+      &.footerlogo { margin: -$logo-padding-top 20px; }
+   }
+
+   ul li { margin-bottom: .75em; }
 }
-#footer .copyright, #footer .menu-quick-links-container, #footer .menu-footer-menu-container {
+
+.footerbottom {
+   background: $color-charcoal-dk;
+   color: colorize($color-charcoal, l3);
+   font-size: .75em;
+   padding: 1.25em 0 .25em;
+
+   .copyright {
+      font-size: inherit;
+   }
+
+   a, a:visited { color: colorize($color-charcoal, l3); }
+}
+
+.footerright {
+   // display: block;
+   float: right;
+}
+#footer .copyright,
+#footer .menu-quick-links-container,
+#footer .menu-footer-menu-container {
     float: left;
 }
 .footerbottom .menu-item {
-    display: inline-block;
     display: inline-block;
     padding: 0 5px;
 }

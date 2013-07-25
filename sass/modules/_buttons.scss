@@ -22,7 +22,7 @@
   @include button-box-shadow($color-accent2);
   @include button-radius;
 
-  @include transition-bg($transition-duration);
+  // @include transition-bg($transition-duration);
 
   &:visited { color: $color-white; }
   &:hover, &:focus {

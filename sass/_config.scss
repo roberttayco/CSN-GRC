@@ -14,11 +14,6 @@ $color-accent2: #277f7f;     // teal
 $color-accent1-light: #d94941; // light red
 $color-accent2-light: #369998; // teal
 
-// Misc Variables
-// ==================
-$container-width: 1100px;
-$transition-duration: 250ms;
-
 
 // below are older colors that need to be changed
 $color-gray-dk: #6c7880;
@@ -30,16 +25,26 @@ $color-light-beige: #e5e4e3;
 $color-medium-beige: #f4f2f1;
 
 
-// border radius for buttons - defaults to 4px
-@mixin button-radius($n: 4px) {
-   border-radius: $n;
-}
+// Misc Variables
+// ==================
+$container-width: 1100px;
+$transition-duration: 250ms;
+
+
+//    Mixins
+// ==================
 @mixin box-sizing {
    -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
            box-sizing: border-box;
 }
 
+// buttons
+// -------------
+// border radius for buttons - defaults to 4px
+@mixin button-radius($n: 4px) { border-radius: $n; }
+
+// button gradient builder
 @mixin button-gradient($color) {
    background: colorize($color, l2);
    background-image: -webkit-linear-gradient(top, colorize($color, l2), colorize($color, l1));
@@ -49,14 +54,25 @@ $color-medium-beige: #f4f2f1;
    background-image: linear-gradient(top, colorize($color, l2), colorize($color, l1));
 }
 
+// box shadow under button (3D effect)
 @mixin button-box-shadow($color) {
   -webkit-box-shadow: 0 2px 0 0 colorize($color, d2);
      -moz-box-shadow: 0 2px 0 0 colorize($color, d2);
           box-shadow: 0 2px 0 0 colorize($color, d2);
 }
 
+@mixin transition-color($duration) {
+   -webkit-transition: color $duration linear;
+           transition: color $duration linear;
+}
+@mixin transition-bg($duration) {
+   -webkit-transition: background $duration linear;
+           transition: background $duration linear;
+}
 
-// Functions
+
+//    Functions
+// ==================
 
 // Tint or shade a color set amounts
 @function colorize($color, $change: n) {
@@ -70,10 +86,10 @@ $color-medium-beige: #f4f2f1;
     @return tint($color, 25%);
   }
   @if $change == l3 {
-    @return tint($color, 50%);
+    @return tint($color, 35%);
   }
   @if $change == l4 {
-    @return tint($color, 75%);
+    @return tint($color, 50%);
   }
   @if $change == d1 {
     @return shade($color, 10%);
@@ -82,9 +98,9 @@ $color-medium-beige: #f4f2f1;
     @return shade($color, 25%);
   }
   @if $change == d3 {
-    @return shade($color, 50%);
+    @return shade($color, 35%);
   }
   @if $change == d4 {
-    @return shade($color, 75%);
+    @return shade($color, 50%);
   }
 }

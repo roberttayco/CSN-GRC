@@ -612,98 +612,9 @@ letter-spacing: 1px;
    display: inline;
 }
 
+@import "modules/articles";
 
-/************************* 
-   Sidebars
-*************************/
-.right-sidebar #sidebar-1-wrap {
-    float: right;
-    width: 33%;
-}
-
-#sidebar-1 {
-   margin: 0;
-   padding: 0;
-}
-
-#sidebar-1 .widget {
-   margin: 0 0 15px;
-   padding: 0;
-   clear: both;
-}
-
-
-#sidebar-1 h4 {
-   background: #FFFFFF;
-   border-top: 0px solid #E8E8E8;
-   border-bottom: 0px solid #E8E8E8;
-   border-left: 0px solid #E8E8E8;
-   border-right: 0px solid #E8E8E8;
-   margin: 0;
-   padding: 4px 5px 4px 10px;
-   color: #BF3730;
-   font-family: Raleway, sans-serif;
-   font-size: 13px;
-   font-weight: normal;
-   font-weight: 600;
-}
-#sidebar-1 .widget p {
-   margin: 0;
-   padding: 0;
-}
-#sidebar-1 .textwidget, #sidebar-2 .textwidget, #sidebar-1 .php-textwidget, #sidebar-2 .php-textwidget, #sidebar-1 .widget_tag_cloud div div, #sidebar-2 .widget_tag_cloud div div, #sidebar-1 .catalyst-excerpt-widget-inner, #sidebar-2 .catalyst-excerpt-widget-inner, #sidebar-1 .author-bio-widget, #sidebar-2 .author-bio-widget {
-   padding: 20px;
-}
-#sidebar-1 #wp-calendar caption, #sidebar-2 #wp-calendar caption, #sidebar-1 #wp-calendar th, #sidebar-2 #wp-calendar th {
-
-}
-#cat, .widget_archive select, #sidebar-1 .widget_archive select, #sidebar-2 .widget_archive select {
-   background: #F6F6F6;
-   border: 1px solid #E8E8E8;
-   margin: 10px 0 10px 10px;
-   padding: 3px;
-   font-size: 12px;
-   display: inline;
-}
-#sidebar-1 #cat, #sidebar-1 .widget_archive select {
-   width: 353px;
-}
-#sidebar-2 #cat, #sidebar-2 .widget_archive select {
-   width: 138px;
-}
-#sidebar-1 a img, #sidebar-2 a img {
-   border: none;
-   margin: 0;
-   padding: 0;
-}
-#sidebar-1 ul li {
-   list-style-type: none;
-}
-#sidebar-1 ol li {
-   list-style-type: decimal;
-}
-#sidebar-1 ul, #sidebar-1 ol {
-   margin: 0;
-   padding: 10px 10px 10px 25px;
-}
-#sidebar-1 .searchform, #sidebar-2 .searchform {
-   padding: 0 10px 0 10px;
-}
-#sidebar-1 ul ul, #sidebar-1 ol ol, #sidebar-2 ul ul, #sidebar-2 ol ol {
-   margin: 0;
-   padding: 0 0 0 15px;
-}
-
-/*** Sidebar Pages Widget ***/
-
-.widget_pages {
-}
-.widget_pages a, .widget_pages a:visited {
-   text-decoration: none !important;
-}
-.widget_pages a:hover {
-   text-decoration: none !important;
-}
+@import "modules/sidebars";
 
 @import "modules/footer";
 
@@ -726,44 +637,10 @@ body {
    color: #444444;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "raleway", "helvetica neue", sans-serif;
-  font-weight: 700;
-  margin-bottom: 10px; }
-
-h1, h2, h3 {
-  line-height: 1.2; }
-
-h1, h2 {
-  font-weight: 400; }
-
-h5, h6 {
-  text-transform: uppercase; }
-
-h1 {
-  font-size: 48px; }
-
-h2 {
-  font-size: 36px; }
-
-h3 {
-  font-size: 30px; }
-
-h4 {
-  font-size: 24px; }
-
-h5 {
-  font-size: 20px; }
-
-h6 {
-  font-size: 16px; }
-
-p {
-  font-size: 16px; }
-
 a, a:visited {
    color: #BF3730;
    text-decoration: none;
+   @include transition-color($transition-duration);
 }
 a:hover {
    color: #D94941;
@@ -905,6 +782,7 @@ a:hover {
    border: solid 1px #ddd;
 }
 
+
 .homepage #content-wrap h4.widgettitle {
     background-color: #d94941;
     padding: 5px 10px;
@@ -967,3 +845,4 @@ a:hover {
 
 
 @import "modules/utility";
+

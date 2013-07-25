@@ -289,13 +289,13 @@ article .entry-content .readmore {
 /*   Footer
 =========================*/
 footer h4 {
-  color: #93bfbf; }
+  color: #72abab; }
 footer a, footer a:visited {
   color: #dbd9d8; }
 footer a:hover, footer a:active {
   color: #bf3730; }
 footer .contactinfo p {
-  color: #93bfbf; }
+  color: #72abab; }
 
 #footer .footer-content a:hover {
   color: #59B2B2;
@@ -339,13 +339,13 @@ footer .contactinfo p {
 
 .footerbottom {
   background: #191919;
-  color: #909090;
+  color: #6f6f6f;
   font-size: .75em;
   padding: 1.25em 0 .25em; }
   .footerbottom .copyright {
     font-size: inherit; }
   .footerbottom a, .footerbottom a:visited {
-    color: #909090; }
+    color: #6f6f6f; }
 
 .footerright {
   float: right; }

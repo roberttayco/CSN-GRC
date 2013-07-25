@@ -14,10 +14,9 @@ Version: 1
 @import "modules/reset-meyer";
 @import "modules/typography";
 @import "general";
-
 @import "modules/buttons";
-
 @import "modules/intro-text";
+@import "modules/articles";
 
 
 
@@ -43,9 +42,11 @@ body {
 
 a, a:visited {
    text-decoration: none;
+   color: $color-accent1;
 }
 a:hover {
    text-decoration: none;
+   color: $color-accent1-light;
 }
 a img {
    border: none;
@@ -136,7 +137,7 @@ body.page-template-template-blog-php .post-format-icon {
    border: 1px solid #E8E8E8;
    margin: 10px 0;
    padding: 6px 0px 5px 6px;
-   color: #222222;
+   color: #888888;
    font-family: Lato, sans-serif;
    font-size: 12px;
    display: inline;
@@ -187,7 +188,7 @@ letter-spacing: 1px;
    display: block;
 }
 #navbar-1-left, #navbar-2-left {
-   margin: 0 0 0 140px;
+   margin: 0 0 0 200px;
    padding: 0;
    float: left;
 }
@@ -213,7 +214,7 @@ letter-spacing: 1px;
    padding: 10px 10px 0 0;
 }
 #navbar-1-right.navbar-right-search {
-   padding: 15px 4px 0 0;
+   padding: 15px 25px 0 0;
 }
 #nav-1, #nav-2 {
    margin: 0;
@@ -713,61 +714,6 @@ letter-spacing: 1px;
 
 .coursedetails .entry-title, .coursedetails .byline-meta, .facultylist .byline-meta  { display: none !important; }
 
-/*************************
-   Basic Styles 
-*************************/
-
-body {
-   font-family: "lato", "helvetica neue", sans-serif;
-   font-size: 16px;
-   font-weight: normal;
-   line-height: 1.5em;
-   color: #444444;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "raleway", "helvetica neue", sans-serif;
-  font-weight: 700;
-  margin-bottom: 10px; }
-
-h1, h2, h3 {
-  line-height: 1.2; }
-
-h1, h2 {
-  font-weight: 400; }
-
-h5, h6 {
-  text-transform: uppercase; }
-
-h1 {
-  font-size: 48px; }
-
-h2 {
-  font-size: 36px; }
-
-h3 {
-  font-size: 30px; }
-
-h4 {
-  font-size: 24px; }
-
-h5 {
-  font-size: 20px; }
-
-h6 {
-  font-size: 16px; }
-
-p {
-  font-size: 16px; }
-
-a, a:visited {
-   color: #BF3730;
-   text-decoration: none;
-}
-a:hover {
-   color: #D94941;
-   text-decoration: none;
-}
 
 /* Buttons */
 
@@ -810,17 +756,21 @@ a:hover {
 *************************/
 
 #nav-1 li a:hover, #nav-1 li a:active {
-   color: #59B2B2;
+   color: $color-accent2-light;
 }
 
 .searchsubmit {
-   background: #d94941;
-   border: 1px solid #d94941;
+   background-color: $color-accent1-light;
+   border: 1px solid $color-accent1-light;
+   width: 30px;
+   background-image: url(images/eyeglass.png);
+   background-position: center center;
+   background-repeat: no-repeat;
 }
 
 .searchsubmit:hover {
-   background: #BF3730;
-   border: 1px solid #d94941;
+   background-color: $color-accent1;
+   border: 1px solid $color-accent1;
 }
 
 /*************************
@@ -840,51 +790,6 @@ a:hover {
    Homepage Styles 
 *************************/
 
-.titleoverlay p {
-    width: 1100px;
-    height: 80px;
-    margin: 0 auto;
-    position: relative;
-}
-.titleoverlay p span {
-    display: inline-block;
-    padding: 25px 20px 0;
-    height: 55px;
-    background-color: rgba(17,17,17,0.8);
-    color: #fff;
-    font-family: 'Raleway', 'Lato', sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-}
-.titleoverlay p:before {
-    display: block;
-    content: ' ';
-    position: absolute;
-    left: -600px;
-    width: 600px;
-    background-color: rgba(17,17,17,0.9);
-    height: 80px;
-}
-#menu-quick-links {
-    background-color: #d94941;
-    width: 250px;
-    text-align: center;
-    position: relative;
-    border: solid 1px #bf3730;
-    border-radius: 3px;
-}
-#menu-quick-links:after {
-    display: block;
-    content: ' ';
-    position:absolute;
-    width: 0; 
-   height: 0; 
-   border-left: 125px solid transparent;
-   border-right: 125px solid transparent;
-   border-top: 40px solid #d94941;
-   background-color:none!important;
-
-}
 
 .homepage .headerbottom .subnav ul li { 
    width: 24%;
@@ -1003,4 +908,4 @@ a:hover {
 
 @import "modules/utility";
 
-@import "modules/articles";
+

@@ -35,7 +35,7 @@ border: none;
 
 .part-time, .full-time {
    clear: left;
-   margin-top: 20px;
+   padding-top: 20px;
 }
 
 #buddypress #member-list .profile-card h4 {
@@ -160,13 +160,14 @@ float: left;
 
 /* Individual Profile Styles */
 
-#buddypress #item-header {
+#content #buddypress #item-header {
    width: 30%;
    float: right;
-}
-
-#buddypress #item-header {
-    background-color: $color-bg-lt;   border: solid 1px #ddd;   margin-top: 20px;
+    background-color: $color-bg-lt;
+    border: solid 1px #ddd;
+    margin: 0;
+    position:relative;
+    top:-30px;
 }
 #buddypress #item-header .widgettitle {
     background-color: $color-accent1-light;   border: solid 1px $color-accent1;   color: #fff;   padding: 5px;   text-transform: uppercase;   font-size: 18px;   font-weight: 400;   line-height: 1.2;
@@ -191,12 +192,22 @@ float: left;
     margin: 0;
     color: #444;
 }
-#buddypress #item-header h5, #item-header h6 {
-    margin: 0;
+#buddypress #item-header h5, {
+    margin: 15px 0 0 0;
+}
+
+#buddypress #item-header h6 {
+   
+   margin: 0;
+}
+
+#buddypress #item-header p {
+    padding:  0;
 }
 
 #buddypress #item-body {
     margin-bottom: 50px;
+    width: 68%;
 }
 
 .profile #content #buddypress .coursetitle {

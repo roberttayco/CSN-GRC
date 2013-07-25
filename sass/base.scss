@@ -603,98 +603,6 @@ letter-spacing: 1px;
 }
 
 
-/************************* 
-   Sidebars
-*************************/
-.right-sidebar #sidebar-1-wrap {
-    float: right;
-    width: 33%;
-}
-
-#sidebar-1 {
-   margin: 0;
-   padding: 0;
-}
-
-#sidebar-1 .widget {
-   margin: 0 0 15px;
-   padding: 0;
-   clear: both;
-}
-
-
-#sidebar-1 h4 {
-   background: #FFFFFF;
-   border-top: 0px solid #E8E8E8;
-   border-bottom: 0px solid #E8E8E8;
-   border-left: 0px solid #E8E8E8;
-   border-right: 0px solid #E8E8E8;
-   margin: 0;
-   padding: 4px 5px 4px 10px;
-   color: #BF3730;
-   font-family: Raleway, sans-serif;
-   font-size: 13px;
-   font-weight: normal;
-   font-weight: 600;
-}
-#sidebar-1 .widget p {
-   margin: 0;
-   padding: 0;
-}
-#sidebar-1 .textwidget, #sidebar-2 .textwidget, #sidebar-1 .php-textwidget, #sidebar-2 .php-textwidget, #sidebar-1 .widget_tag_cloud div div, #sidebar-2 .widget_tag_cloud div div, #sidebar-1 .catalyst-excerpt-widget-inner, #sidebar-2 .catalyst-excerpt-widget-inner, #sidebar-1 .author-bio-widget, #sidebar-2 .author-bio-widget {
-   padding: 20px;
-}
-#sidebar-1 #wp-calendar caption, #sidebar-2 #wp-calendar caption, #sidebar-1 #wp-calendar th, #sidebar-2 #wp-calendar th {
-
-}
-#cat, .widget_archive select, #sidebar-1 .widget_archive select, #sidebar-2 .widget_archive select {
-   background: #F6F6F6;
-   border: 1px solid #E8E8E8;
-   margin: 10px 0 10px 10px;
-   padding: 3px;
-   font-size: 12px;
-   display: inline;
-}
-#sidebar-1 #cat, #sidebar-1 .widget_archive select {
-   width: 353px;
-}
-#sidebar-2 #cat, #sidebar-2 .widget_archive select {
-   width: 138px;
-}
-#sidebar-1 a img, #sidebar-2 a img {
-   border: none;
-   margin: 0;
-   padding: 0;
-}
-#sidebar-1 ul li {
-   list-style-type: none;
-}
-#sidebar-1 ol li {
-   list-style-type: decimal;
-}
-#sidebar-1 ul, #sidebar-1 ol {
-   margin: 0;
-   padding: 10px 10px 10px 25px;
-}
-#sidebar-1 .searchform, #sidebar-2 .searchform {
-   padding: 0 10px 0 10px;
-}
-#sidebar-1 ul ul, #sidebar-1 ol ol, #sidebar-2 ul ul, #sidebar-2 ol ol {
-   margin: 0;
-   padding: 0 0 0 15px;
-}
-
-/*** Sidebar Pages Widget ***/
-
-.widget_pages {
-}
-.widget_pages a, .widget_pages a:visited {
-   text-decoration: none !important;
-}
-.widget_pages a:hover {
-   text-decoration: none !important;
-}
-
 @import "modules/footer";
 
 
@@ -874,4 +782,15 @@ letter-spacing: 1px;
 
 @import "modules/utility";
 
+
+#sidebar-1-wrap .widgetttitle {
+background-color: #d94941;
+border: solid 1px #bf3730;
+color: #fff;
+padding: 5px;
+text-transform: uppercase;
+font-size: 18px;
+font-weight: 400;
+line-height: 1.2;
+}
 

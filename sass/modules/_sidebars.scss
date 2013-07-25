@@ -32,25 +32,6 @@ margin: 0;
    clear: both;
 }
 
-
-#sidebar-1 h4 {
-   background: #FFFFFF;
-   border-top: 0px solid #E8E8E8;
-   border-bottom: 0px solid #E8E8E8;
-   border-left: 0px solid #E8E8E8;
-   border-right: 0px solid #E8E8E8;
-   margin: 0;
-   padding: 4px 5px 4px 10px;
-   color: #BF3730;
-   font-family: Raleway, sans-serif;
-   font-size: 13px;
-   font-weight: normal;
-   font-weight: 600;
-}
-#sidebar-1 .widget p {
-   margin: 0;
-   padding: 0;
-}
 #sidebar-1 .textwidget, #sidebar-2 .textwidget, #sidebar-1 .php-textwidget, #sidebar-2 .php-textwidget, #sidebar-1 .widget_tag_cloud div div, #sidebar-2 .widget_tag_cloud div div, #sidebar-1 .catalyst-excerpt-widget-inner, #sidebar-2 .catalyst-excerpt-widget-inner, #sidebar-1 .author-bio-widget, #sidebar-2 .author-bio-widget {
    padding: 20px;
 }

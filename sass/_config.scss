@@ -14,15 +14,6 @@ $color-accent2: #277f7f;     // teal
 $color-accent1-light: #d94941; // light red
 $color-accent2-light: #369998; // teal
 
-// Misc Variables
-// ==================
-$container-width: 1100px;
-$transition-duration: 250ms;
-
-
-// below are older colors that need to be changed
-$color-accent1-light: #d94941; // light red
-$color-accent2-light: #369998; // teal
 
 // below are older colors that need to be changed
 $color-gray-dk: #6c7880;
@@ -33,6 +24,11 @@ $color-light-blue: #369998;
 $color-light-beige: #e5e4e3;
 $color-medium-beige: #f4f2f1;
 
+
+// Misc Variables
+// ==================
+$container-width: 1100px;
+$transition-duration: 250ms;
 
 
 //    Mixins

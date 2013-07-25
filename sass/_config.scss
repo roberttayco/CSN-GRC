@@ -4,18 +4,22 @@
 //    Colors
 // ==================
 $color-white: #fff;
-$color-bg-lt: #f4f1f0;   // very light warm grey
+$color-bg-lt: #f4f2f1;   // very light warm grey
 $color-type: #444;       // very dark neutral grey
 $color-accent1: #bf3730; // red
+$color-accent1-light: #d94941; // light red
 $color-accent2: #277f7f; // teal
+$color-accent2-light: #369998; // teal
 
 // below are older colors that need to be changed
-$color-mint: #aae7b0;
-$color-orange: #ff905c;
 $color-charcoal: #222;
 $color-gray-dk: #6c7880;
-$color-blue-lt: #e9f0f4;
-$color-blue-md: #658daa;
+$color-dark-red: #bf3730;
+$color-light-red: #d94941;
+$color-dark-blue: #277f7f;
+$color-light-blue: #369998;
+$color-light-beige: #e5e4e3;
+$color-medium-beige: #f4f2f1;
 
 
 // border radius for buttons - defaults to 4px

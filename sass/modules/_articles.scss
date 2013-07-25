@@ -1,48 +1,108 @@
 // Styling for articles
 // ====================
 
-// article cards on home page
-.home {
+article {
+   position: relative;
+}
 
-   // This is the base overall styling for <article> tags on the home page
-   .php-textwidget {
-      article {
-         background: $color-white;
-         float: left;
-         margin: 10px;
-         overflow: hidden;
-         height: 480px; // This crops off a long article excerpt. Read more link is unnecessary with this.
-         width: 340px;
+article .entry-content .readmore {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
 
-         p { font-size: $font-size-base; }
-         // &:after {
-         //    @include article-fade;
-         // }
+.byline-meta {
+    color: #888;
+}
+
+
+
+
+
+.home #php-text-3 article {
+  background: white;
+  float: left;
+  margin: 10px 10px 30px 10px;
+  overflow: hidden;
+  height: 500px;
+  width: 340px; 
+  position: relative;
+  }
+  
+.home .php-textwidget article p {
+    font-size: 16px; 
+    }
+
+.home article.post {
+  border: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+  }
+  
+.home article.post .entry-image {
+    max-height: 200px;
+    overflow: hidden; 
+    }
+    
+.home article.post .entry-image img {
+      min-width: 100%;
+      height: auto; 
       }
-   }
+  
+.home article.post .entry-header, .home article.post .entry-content {
+    margin: 1em; 
+    }
+   
+.homepage article .entry-title {
+    font-size: 24px;
+}
 
-   // news articles
-   article.post {
-      border: 1px solid #ddd;
+/* Events Styling */
 
-      @include box-sizing;
+.event .entry-title {
+    font-size: 24px;
+}
+.event {
+    min-height: 150px;
+    margin: 0 0 20px 0;
+}
 
-      .entry-image {
-         max-height: 200px;
-         overflow: hidden;
-         
-         img {
-            min-width: 100%;
-            height: auto;
-         }
-      }
-      .entry-header,
-      .entry-content { margin: 1em; }
 
-   }
+.homepage #php-text-4 .event {
+    width: 340px;
+    float: left;
+    margin: 20px 0 40px 20px;
+    height: 140px;
+    overflow: visible;
+    position: relative;
+    border-right: solid 1px #ddd;
+    padding-right: 5px;
+}
 
-   // calendar events
-   article.event {
 
-   }
+.calendardate {
+    width: 55px;
+    float: left;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    background-color: $color-light-beige;
+    border: solid 1px #ddd;
+    margin:  0 10px 0 0;
+}
+.calendardate .month {
+    /* font-family: 'Lato', sans-serif; */
+    font-weight: 400;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $color-accent2-light;
+    padding: 0;
+    line-height: 1.8em;
+    border: solid 1px $color-accent2-light;
+}
+.calendardate .day {
+    font-size: 26px;
+    padding: 8px 0;
+    color: $color-accent2;
 }

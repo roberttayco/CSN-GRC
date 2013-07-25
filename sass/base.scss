@@ -802,15 +802,7 @@ a:hover {
 //     background: #277f7f; }
 
 
-article {
-   position: relative;
-}
 
-article .entry-content .readmore {
-    position: absolute;
-    bottom: 10px;
-    right: 15px;
-}
 
 
 /*************************
@@ -947,40 +939,6 @@ article .entry-content .readmore {
    border: solid 1px #ddd;
 }
 
-.home #php-text-3 article {
-  background: white;
-  float: left;
-  margin: 10px 10px 30px 10px;
-  overflow: hidden;
-  height: 480px;
-  width: 340px; 
-  position: relative;
-  }
-  
-.home .php-textwidget article p {
-    font-size: 16px; 
-    }
-
-.home article.post {
-  border: 1px solid #ddd;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; 
-  }
-  
-.home article.post .entry-image {
-    max-height: 200px;
-    overflow: hidden; 
-    }
-    
-.home article.post .entry-image img {
-      min-width: 100%;
-      height: auto; 
-      }
-  
-.home article.post .entry-header, .home article.post .entry-content {
-    margin: 1em; 
-    }
 
 .homepage #content-wrap h4.widgettitle {
     background-color: #d94941;
@@ -991,48 +949,6 @@ article .entry-content .readmore {
     text-transform: uppercase;
     width: 200px;
     border: solid 1px #bf3730;
-}
-.homepage article .entry-title {
-    font-size: 24px;
-}
-
-.home #php-text-4 .event {
-    width: 340px;
-    float: left;
-    margin: 20px 0 40px 20px;
-    height: 140px;
-    overflow: visible;
-    position: relative;
-    border-right: solid 1px #ddd;
-    padding-right: 5px;
-}
-.homepage .byline-meta {
-    color: #888;
-}
-.calendardate {
-    width: 55px;
-    float: left;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    background-color: #e5e4e3;
-    border: solid 1px #ddd;
-    margin:  0 10px 0 0;
-}
-.calendardate .month {
-    /* font-family: 'Lato', sans-serif; */
-    font-weight: 400;
-    font-size: 9px;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #369998;
-    padding: 0;
-    line-height: 1.8em;
-    border: solid 1px #369998;
-}
-.calendardate .day {
-    font-size: 26px;
-    padding: 8px 0;
-    color: #277f7f;
 }
 .entry-content {
     /* width: 260px; */
@@ -1083,16 +999,8 @@ article .entry-content .readmore {
    float: right;
 }
 
-/**************************
-   News Pages
-***************************/
 
-.event .entry-title {
-    font-size: 24px;
-}
-.event {
-    min-height: 150px;
-    margin: 0 0 20px 0;
-}
 
 @import "modules/utility";
+
+@import "modules/articles";

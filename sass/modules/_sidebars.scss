@@ -1,23 +1,22 @@
 
-/************************* 
-   Sidebars
-*************************/
 
-#sidebar-1-wrap .widgettitle,  #sidebar-1-wrap h2.widgettitle {
-    background-color: $color-accent1-light;
-    border: solid 1px $color-accent1;
-    color: #fff;
-    padding: 5px;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.2;
-}
+
 #sidebar-1-wrap .widget-wrap {
     background-color: $color-medium-beige;
     border: solid 1px #ddd;
     margin-top: 20px;
 }
+
+#sidebar-1-wrap .widget-wrap p, #sidebar-1-wrap .widget-wrap ul {
+padding: 5px 15px;
+}
+
+#sidebar-1-wrap .widget-wrap h3, #sidebar-1-wrap .widget-wrap h4, #sidebar-1-wrap .widget-wrap h5, #sidebar-1-wrap .widget-wrap h6 {
+padding: 5px 15px;
+color: $color-accent1;
+margin: 0;
+}
+
 .right-sidebar #sidebar-1-wrap {
     float: right;
     width: 33%;
@@ -96,13 +95,14 @@
    padding: 0 0 0 15px;
 }
 
-/*** Sidebar Pages Widget ***/
 
-.widget_pages {
-}
-.widget_pages a, .widget_pages a:visited {
-   text-decoration: none !important;
-}
-.widget_pages a:hover {
-   text-decoration: none !important;
+.widgettitle {
+    background-color: #d94941;
+    border: solid 1px #bf3730;
+    color: #fff;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
 }

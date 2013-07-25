@@ -502,7 +502,7 @@ letter-spacing: 1px;
 }
 
 /*** Content Headlines ***/
-
+/* I think these were from the Dynamik styles? They're overriding typography */
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
    margin: 0 0 4px;
    padding: 0;
@@ -513,7 +513,7 @@ letter-spacing: 1px;
 }
 #content h1 {
    color: #BF3730;
-   font-size: 40px;
+
 }
 #content h2 a, #content h2 a:visited {
    color: #BF3730;
@@ -525,23 +525,23 @@ letter-spacing: 1px;
 }
 #content h2 {
    color: #BF3730;
-   font-size: 36px;
+ 
 }
 #content h3 {
    color: #BF3730;
-   font-size: 32px;
+   
 }
 #content h4 {
    color: #BF3730;
-   font-size: 26px;
+ 
 }
 #content h5 {
    color: #BF3730;
-   font-size: 20px;
+   
 }
 #content h6 {
    color: #BF3730;
-   font-size: 16px;
+   
 }
 
 /*** Sticky Posts ***/

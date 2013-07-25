@@ -1,0 +1,17 @@
+#member-list>li {
+   width: 33%;
+   float: left;
+}
+
+#member-list>li:nth-child(4), #member-list>li:nth-child(7) {
+   clear: left;
+}
+
+.part-time, .full-time {
+   clear: left;
+}
+
+#buddypress #item-header {
+   width: 30%;
+   float: right;
+}

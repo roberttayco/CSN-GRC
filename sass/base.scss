@@ -874,25 +874,8 @@ letter-spacing: 1px;
    Faculty List Page
 ***************************/
 
-#member-list>li {
-   width: 33%;
-   float: left;
-}
 
-#member-list>li:nth-child(4), #member-list>li:nth-child(7) {
-   clear: left;
-}
-
-.part-time, .full-time {
-   clear: left;
-}
-
-#buddypress #item-header {
-   width: 30%;
-   float: right;
-}
-
-
+@import "modules/buddypress";
 
 @import "modules/utility";
 

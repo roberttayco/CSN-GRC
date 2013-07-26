@@ -1,0 +1,71 @@
+
+/* Table styling
+   ========================== */
+#content article table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    font-size: .7em;
+    width: 100%;
+   }
+#content article table > caption {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: .5em;
+    text-align: left;
+   }
+#content article tr:nth-child(even) { background: #f7f7f7; }
+#content article td, th {
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+  }
+#content article td.lvl-1 { background: $color-accent1;}
+#content article td.lvl-2 { background: #e55850;}
+#content article td.lvl-3 { background: #59b2b2;}
+
+#content article ul.software-key {
+  padding: 10px 60px 40px;
+}
+
+#content article ul.software-key li {
+  display: block;
+  float: left;
+  /* width: 30%; */
+  position: relative;
+  padding-right: 60px;
+}
+
+#content article .software-key li:before {
+  display: block;
+  content: ' ';
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  left: -60px;
+}
+
+#content article .software-key .software-key--a:before {
+  background: $color-accent1;
+}
+
+#content article .software-key .software-key--b:before {
+  background: #e55850;
+}
+
+#content article .software-key .software-key--c:before {
+  background: #59b2b2;
+}
+
+#content articleth {
+  border-bottom: solid 1px #ddd;
+  border-top: solid 1px #ddd;
+}
+
+tbody tr td:first-child {
+  border-right: solid 1px #ddd;
+  border-left: none;
+}
+
+tbody td {
+  border: solid 1px #ddd;
+}

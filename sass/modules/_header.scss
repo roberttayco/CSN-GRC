@@ -3,10 +3,10 @@
 *************************/
 
 a{
-   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+   -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 #header-wrap {
@@ -144,10 +144,18 @@ a{
    border-right: solid 1px transparent;
 }
 
-.headerbottom .subnav ul li a:hover {
-   background-color: $color-accent1;
-   border-left: solid 1px #991d17;
-   border-right: solid 1px #991d17;
+.headerbottom .subnav ul li a:hover, .headerbottom .subnav ul li.current-menu-item a:hover {
+  background: #d33c37; /* Old browsers */
+background: -moz-linear-gradient(top,  #d33c37 0%, #d94941 100%, #7db9e8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d33c37), color-stop(100%,#d94941), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #d33c37 0%,#d94941 100%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #d33c37 0%,#d94941 100%,#7db9e8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #d33c37 0%,#d94941 100%,#7db9e8 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #d33c37 0%,#d94941 100%,#7db9e8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d33c37', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+   border-left: solid 1px $color-accent1;
+   border-right: solid 1px $color-accent1;
 }
 
 .headerbottom .subnav ul li.current-menu-item a{

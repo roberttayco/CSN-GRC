@@ -1,23 +1,31 @@
+.homepage .headerbottom .subnav ul li {
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  float: left;
+}
 
-
-
-.homepage .headerbottom .subnav ul li { 
-   width: 24%;
-   padding: 20px 0;
-   margin: 0;
-   text-align: center;
-   border-left: solid 1px #991d17;
+.homepage .headerbottom .subnav ul li a {
    font-size: 18px;
-   display: block;
-   float: left;
-}
-.homepage .headerbottom .subnav ul li:nth-last-child(1){
-    border-right: solid 1px #991d17;
+   background-color: $color-accent1-light;
+   border-left: solid 1px $color-accent1;
+   border-right: solid 1px transparent;
 }
 
-.homepage .headerbottom .subnav ul li:nth-child(odd) {
-    background-color: #bf3730;
+.homepage .headerbottom .subnav ul li:nth-last-child(1) {
+  border-right: solid 1px $color-accent1;
 }
+
+.homepage .headerbottom .subnav ul li:nth-child(odd) a {
+   background-color: $color-accent1;
+   border-left: solid 1px #991d17;
+   border-right: solid 1px #991d17;
+}
+
+
 
 .homepage #text-3 .textwidget {
     width: 650px;
@@ -25,6 +33,15 @@
     text-align: center;
     padding: 30px 0 40px;
 }
+
+.homepage .introtext h2, .homepage .introtext h3, .homepage .introtext p {
+   -webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+   
+}
+
 .homepage .introtext h2 {
     font-size: 44px;
     font-weight: 600;

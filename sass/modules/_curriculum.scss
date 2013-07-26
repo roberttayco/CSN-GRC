@@ -1,0 +1,31 @@
+/* Curriculum Pages Specific Styles */
+
+#content .halfsection {
+    float: left;
+    width: 48%;
+    margin-left: 2%;
+    background-color: $color-bg-lt;
+    padding: 0;
+}
+.course {
+    padding: 15px;
+}
+#content article p.credits {
+    padding: 0 0 0 10px;
+    display: inline;
+    font-style: italic;
+    color: #888;
+    position: relative;
+}
+
+#content article p.credits:before {
+    display: block;
+    content: '-';
+    position:absolute;
+    left:0;
+}
+
+.course h5 {
+    width: auto;
+    display: inline;
+}

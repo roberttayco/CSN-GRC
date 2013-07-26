@@ -6,7 +6,7 @@
     float: left;
 }
 .sectiontitle {}
-.see-all {
+.see-all, a.see-all, a.see-all:visited  {
     float:  right;
     display: block;
     padding-right: 20px;
@@ -14,7 +14,7 @@
     color: $color-accent1;
 }
 
-.see-all a {
+.see-all a, .see-all a:visited {
     color: $color-accent1;
 }
 

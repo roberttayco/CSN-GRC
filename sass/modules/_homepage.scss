@@ -18,13 +18,19 @@
 .homepage .headerbottom .subnav ul li:nth-last-child(1) {
   border-right: solid 1px $color-accent1;
 }
-
+/*
 .homepage .headerbottom .subnav ul li:nth-child(odd) a {
    background-color: $color-accent1;
    border-left: solid 1px #991d17;
    border-right: solid 1px #991d17;
 }
 
+.homepage .headerbottom .subnav ul li:nth-child(odd) a:hover {
+   background-color: $color-accent1;
+   border-left: solid 1px $color-accent1;
+   border-right: solid 1px transparent;
+}
+*/
 
 
 .homepage #text-3 .textwidget {

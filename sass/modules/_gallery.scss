@@ -11,7 +11,13 @@
     display: block;
     padding-right: 20px;
     position: relative;
+    color: $color-accent1;
 }
+
+.see-all a {
+    color: $color-accent1;
+}
+
 .students #content article p {
     max-width: 1100px;
 }

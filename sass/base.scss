@@ -52,15 +52,17 @@ body {
 
 a, a:visited {
    text-decoration: none;
-   color: $color-accent1;
+   color: $color-accent2;
 }
 a:hover {
    text-decoration: none;
-   color: $color-accent1-light;
+   color: $color-accent2-light;
 }
 a img {
    border: none;
 }
+
+
 
 /*** Images/Alignment ***/
 
@@ -517,7 +519,7 @@ letter-spacing: 1px;
    color: #BF3730;
 
 }
-#content h2 a, #content h2 a:visited {
+#content h1 a, #content h1 a:visited, #content h2 a, #content h2 a:visited {
    color: #BF3730;
    text-decoration: none;
 }

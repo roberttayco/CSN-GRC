@@ -1,31 +1,97 @@
-/* Curriculum Pages Specific Styles */
-
 #content .halfsection {
-    float: left;
-    width: 48%;
-    margin-left: 2%;
-    background-color: $color-bg-lt;
-    padding: 0;
+  float: left;
+  width: 48%;
+  margin: 0 2% 20px 0;
+  background-color: #f4f2f1;
+  border: solid 1px #ddd;
+  padding: 0;
 }
-.course {
-    padding: 15px;
+
+#content .course {
+  margin: 0 2%;
+  border-top: solid 1px #ddd;
+  padding-top: 10px;
 }
-#content article p.credits {
-    padding: 0 0 0 10px;
-    display: inline;
-    font-style: italic;
-    color: #888;
-    position: relative;
+
+
+#content article .course p.credits {
+  padding: 0 0 0 10px;
+  margin:0 5px;
+  display: inline;
+  font-style: italic;
+  color: #888;
+  position: relative;
 }
 
 #content article p.credits:before {
-    display: block;
-    content: '-';
-    position:absolute;
-    left:0;
+  display: block;
+  content: '-';
+  position: absolute;
+  left: 0;
+  top: -2px;
 }
 
-.course h5 {
-    width: auto;
-    display: inline;
+
+#content .course h5 {
+  width: auto;
+  display: inline;
+  color: $color-accent2;
+}
+
+#content .fullsection {
+  background-color: #f4f2f1;
+  border: solid 1px #ddd;
+  padding: 0;
+  margin: 20px 0;
+  clear: left;
+  overflow: auto;
+}
+
+#content .entry-content .halfsection:nth-last-child(1) {
+  margin: 0;
+}
+
+#content article .course p {
+  padding: 0 0 15px 0;
+}
+
+
+#content .fullsection .course {
+  width: 45%;
+  float: left;
+  min-height: 130px;
+}
+
+#content .course:nth-child(2), .fullsection .course:nth-child(3) {
+    border-top: none;
+}
+
+#content .fullsection .course:nth-child(even) {
+  clear: left;
+}
+
+#content .downloads a.button {
+    float: left;
+    display: block;
+    margin: 10px;
+}
+#content article .downloads p {
+    padding: 0;
+}
+
+.degree-sheets #content {
+width: 1100px;
+}
+
+/* Course Descriptions Page */
+
+.course-descriptions #content .course:nth-child(1) {
+    border-top: none;
+}
+.course-descriptions #content .course {
+    width: 45%;
+    float: left;
+}
+.course-descriptions #content .course:nth-child(odd) {
+    clear: left;
 }

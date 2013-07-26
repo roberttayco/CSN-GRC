@@ -76,7 +76,7 @@ margin: 0;
 }
 
 /* Had to put this at bottom of base.css, wouldn't apply otherwise */
-#sidebar-1-wrap .widget-wrap .widgetttitle {
+#sidebar-1-wrap .widget-wrap .widgetttitle, #content .widgettitle {
 background-color: #d94941;
 border: solid 1px #bf3730;
 color: #fff;

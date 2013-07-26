@@ -17,6 +17,11 @@ footer {
 
 }
 
+#footer .clearfix {
+margin: 0 auto;
+width: 1100px;
+}
+
 #footer .footer-content a:hover {
    color: #59B2B2;
    text-decoration: none;

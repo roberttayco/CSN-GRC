@@ -1,3 +1,51 @@
 /************************* 
    Gallery Styles 
 *************************/
+#content .sectiontitle {
+    background-color: #d94941;     padding: 5px 10px;     color: #fff;     font-size: 16px;     font-weight: 600;     text-transform: uppercase;     width: 200px;     border: solid 1px #bf3730;
+    float: left;
+}
+.sectiontitle {}
+.see-all {
+    float:  right;
+    display: block;
+    padding-right: 20px;
+    position: relative;
+}
+.students #content article p {
+    max-width: 1100px;
+}
+.see-all:after {
+    display: block;
+    content: '\2192';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.ngg-galleryoverview {
+    margin-top: 0!important;
+}
+#content h2 {
+    margin-bottom: 10px;
+}
+
+#content .ngg-gallery-thumbnail img {
+    padding: 0;
+}
+
+@media screen and (max-width: 1100px){
+
+.homepage #content-wrap #text-5 .widget-wrap {
+    width: 1100px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+#DOPNextGENThumbnailScroller1 {
+    position: relative;
+    left: -25px;
+}
+.homepage #content-wrap #text-5 h4.widgettitle {
+    margin: 0!important;
+}
+
+}

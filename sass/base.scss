@@ -677,101 +677,12 @@ letter-spacing: 1px;
 
 @import "modules/sidebars";
 
+
 /*************************
    Homepage Styles 
 *************************/
 
-
-.homepage .headerbottom .subnav ul li { 
-   width: 24%;
-   padding: 20px 0;
-   margin: 0;
-   text-align: center;
-   border-left: solid 1px #991d17;
-   font-size: 18px;
-   display: block;
-   float: left;
-}
-.homepage .headerbottom .subnav ul li:nth-last-child(1){
-    border-right: solid 1px #991d17;
-}
-
-.homepage .headerbottom .subnav ul li:nth-child(odd) {
-    background-color: #bf3730;
-}
-
-.homepage #text-3 .textwidget {
-    width: 650px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 30px 0 40px;
-}
-.homepage .introtext h2 {
-    font-size: 44px;
-    font-weight: 600;
-    margin-bottom: 0;
-    color: #277f7f;
-}
-.homepage .introtext h3 {
-    font-size: 36px;
-    font-weight: 500;
-    color: #277f7f;
-}
-.homepage .introtext h3 span {
-    font-size: 32px;
-}
-
-.homepage .introtext p {
-   font-size: 20px;
-}
-
-
-.homepage #content {
-   padding: 0;
-}
-
-.homepage #php-text-3, .homepage #text-5 {
-   background-color: #f4f2f1;
-   border: solid 1px #ddd;
-}
-
-
-.homepage #content-wrap h4.widgettitle {
-    background-color: #d94941;
-    padding: 5px 10px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    width: 200px;
-    border: solid 1px #bf3730;
-}
-.entry-content {
-    /* width: 260px; */
-    /* float: right; */
-}
-#php-text-4 .entry-title {
-    position: relative;
-    top: 5px;
-    margin-bottom: 5px;
-}
-.home #php-text-4 article:nth-last-child(1) {
-    border-right: none;
-}
-
-#php-text-4 article .readmore {
-    bottom: -10px;
-}
-
-.homepage #text-5 .widget-wrap {
-    width: 1200px;
-}
-.homepage #content-wrap #text-5 h4.widgettitle {
-    margin-left: 50px;
-}
-.DOP_NextGENThumbnailScroller_Container {
-    margin: 0 auto!important;
-}
+@import "modules/homepage";
 
 /**************************
    Faculty List Page

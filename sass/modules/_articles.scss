@@ -50,6 +50,7 @@ article .readmore {
 }
 #content .blog article {
     border-bottom: none;
+    margin: 0 0 20px 0;
 }
 #content .blog .attachment-large.wp-post-image {
     padding: 0!important;
@@ -225,4 +226,19 @@ article .readmore {
 #content article p, #content article ul {
 
    
+}
+
+/* AIGA Page Styles */
+
+.aiga .custom_content_loop .blog {
+width: 700px;
+float: left;
+}
+.aiga .custom_sidebar_loop {
+    width: 340px;
+    float: left;
+}
+
+#sidebar-1 .widget-wrap .blog {
+padding: 15px;
 }

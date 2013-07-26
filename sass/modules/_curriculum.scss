@@ -36,6 +36,8 @@
   width: auto;
   display: inline;
   color: $color-accent2;
+  font-family: $font-copy;
+  font-weight:400;
 }
 
 #content .fullsection {
@@ -62,7 +64,7 @@
   min-height: 130px;
 }
 
-#content .course:nth-child(2), .fullsection .course:nth-child(3) {
+#content .course:nth-child(2), #content .fullsection .course:nth-child(3) {
     border-top: none;
 }
 

@@ -18,19 +18,17 @@
 .homepage .headerbottom .subnav ul li:nth-last-child(1) {
   border-right: solid 1px $color-accent1;
 }
-/*
-.homepage .headerbottom .subnav ul li:nth-child(odd) a {
-   background-color: $color-accent1;
-   border-left: solid 1px #991d17;
-   border-right: solid 1px #991d17;
-}
+// .homepage .headerbottom .subnav ul li:nth-child(odd) a {
+//    background-color: $color-accent1;
+//    border-left: solid 1px #991d17;
+//    border-right: solid 1px #991d17;
+// }
 
-.homepage .headerbottom .subnav ul li:nth-child(odd) a:hover {
-   background-color: $color-accent1;
-   border-left: solid 1px $color-accent1;
-   border-right: solid 1px transparent;
-}
-*/
+// .homepage .headerbottom .subnav ul li:nth-child(odd) a:hover {
+//    background-color: $color-accent1;
+//    border-left: solid 1px $color-accent1;
+//    border-right: solid 1px transparent;
+// }
 
 
 .homepage #text-3 .textwidget {
@@ -40,58 +38,47 @@
     padding: 30px 0 40px;
 }
 
-.homepage .introtext h2, .homepage .introtext h3, .homepage .introtext p {
-   -webkit-animation-name: fadeIn;
-	-moz-animation-name: fadeIn;
-	-o-animation-name: fadeIn;
-	animation-name: fadeIn;
+.homepage .introtext h2,
+.homepage .introtext h3,
+.homepage .introtext p {
+  -webkit-animation-name: fadeIn;
+     -moz-animation-name: fadeIn;
+       -o-animation-name: fadeIn;
+          animation-name: fadeIn;
    
 }
 
+.introtext {
+  h2, h3 { color: $color-accent2; }
+}
 .homepage .introtext h2 {
-    font-size: 44px;
-    font-weight: 600;
+    font-size: 48px;
+    font-weight: $font-bold;
     margin-bottom: 0;
-    color: #277f7f;
 }
 .homepage .introtext h3 {
     font-size: 36px;
     font-weight: 500;
-    color: #277f7f;
+    letter-spacing: -1px;
 }
-.homepage .introtext h3 span {
-    font-size: 32px;
-}
+.homepage .introtext h3 span { font-size: 32px; }
+.homepage .introtext p { font-size: 20px; }
 
-.homepage .introtext p {
-   font-size: 20px;
-}
-
-
-.homepage #content {
-   padding: 0;
-}
+.homepage #content { padding: 0; }
 
 .homepage #php-text-3, .homepage #text-5 {
    background-color: #f4f2f1;
    border: solid 1px #ddd;
 }
 
-
 .homepage #content-wrap h4.widgettitle {
-    background-color: #d94941;
-    padding: 5px 10px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
+    background-color: $color-accent1-light;
+    padding: 10px;
+    color: $color-white;
+    font-size: 14px;
     width: 200px;
-    border: solid 1px #bf3730;
 }
-.entry-content {
-    /* width: 260px; */
-    /* float: right; */
-}
+
 #php-text-4 .entry-title {
     position: relative;
     top: 5px;

@@ -501,13 +501,12 @@ body.page-template-template-blog-php .post-format-icon {
 
 
 .widgettitle, #sidebar-1-wrap .widgetttitle {
-background-color: #d94941;
-border: solid 1px #bf3730;
-color: #fff;
+background-color: $color-accent1-light;
+color: $color-white;
 padding: 5px;
 text-transform: uppercase;
 font-size: 18px;
-font-weight: 400;
+font-weight: $font-normal;
 line-height: 1.2;
 }
 

@@ -1,5 +1,13 @@
+.entry-content div {
+   border-bottom: 1px solid #ddd;
+   margin-bottom: 2em;
+   padding-bottom: 1em;
+
+   &:last-child { border: 0; }
+}
 
 .wrap { width: 100%; }
+
 .container {
    margin: 0 auto;
    width: $container-width;

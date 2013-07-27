@@ -34,5 +34,12 @@ h6 { font-size: 16px; }
 // Basic type
 p {
    font-size: $font-size-base;
-   margin-bottom: 1.3em;
+   margin-bottom: .8em;
 }
+
+sup, sub {
+   font-size: 75%;
+   position: relative;
+}
+sup { top: -.5em; }
+sub { bottom: -.4em; }

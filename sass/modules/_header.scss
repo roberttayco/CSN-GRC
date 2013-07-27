@@ -2,12 +2,7 @@
    Header 
 *************************/
 
-a{
-   -webkit-transition: background 1s ease;
-  -moz-transition: background 1s ease;
-  -o-transition: background 1s ease;
-  transition: background 1s ease;
-}
+a { @include transition-color($transition-duration); }
 
 #header-wrap {
    // background: #FFFFFF;
@@ -232,52 +227,50 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d33c37', end
 
 .titleoverlay p {
   width: 1100px;
-  height: 80px;
   margin: 0 auto;
   position: relative;
 }
 
 .titleoverlay p span {
+  border-radius: 0 6px 6px 0;
   display: inline-block;
-  padding: 10px 20px 0;
-  height: 80px;
-  background-color: rgba(17, 17, 17, 0.8);
-  color: #fff;
-  font-family: 'Raleway', 'Lato', sans-serif;
+  padding: 10px 40px 10px 20px;
+  background-color: $color-overlay-black;
+  color: $color-white;
+  font-family: $font-headings;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: $font-bold;
+  letter-spacing: 1px;
 }
 
 .titleoverlay p:before {
   display: block;
-  content: ' ';
+  content: '';
   position: absolute;
-  left: -600px;
-  width: 600px;
-  background-color: rgba(17, 17, 17, 0.9);
-  height: 80px;
+  right: 100%;
+  width: 100%;
+  background-color: $color-overlay-black;
+  height: 100%;
 }
 
 #menu-quick-links {
-  background-color: #d94941;
+  background-color: $color-accent1-light;
   width: 250px;
   text-align: center;
   position: relative;
-  border: solid 1px #bf3730;
-  border-radius: 3px;
-  height: 43px;
+  height: 45px;
 }
 
 #menu-quick-links:after {
   display: block;
-  content: ' ';
+  content: '';
   position: absolute;
   width: 0;
   height: 0;
-  bottom: -40px;
+  bottom: -18px;
   border-left: 125px solid transparent;
   border-right: 125px solid transparent;
-  border-top: 40px solid #d94941;
+  border-top: 18px solid $color-accent1-light;
   background-color: none!important;
 }
 

@@ -18,11 +18,9 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  // @include button-gradient($color-accent2);
   @include button-box-shadow($color-accent2);
   @include button-radius;
-
-  // @include transition-bg($transition-duration);
+  @include transition-bg($transition-duration);
 
   &:visited { color: $color-white; }
   &:hover, &:focus {
@@ -35,7 +33,6 @@
 // call to action button style
 .button-action {
   background: tint($color-accent1, 25%);
-  // @include button-gradient($color-accent1);
   @include button-box-shadow($color-accent1);
 
   &:hover, &:focus {

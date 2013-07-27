@@ -1,10 +1,12 @@
-.entry-content div {
+// styling just for computer labs page divs
+.computer-labs .entry-content div {
    border-bottom: 1px solid #ddd;
    margin-bottom: 2em;
    padding-bottom: 1em;
 
    &:last-child { border: 0; }
 }
+
 
 .wrap { width: 100%; }
 

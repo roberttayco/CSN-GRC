@@ -1,0 +1,163 @@
+/************************* 
+   Navigation 
+*************************/
+
+/*** Navbar 1 ***/
+
+
+#navbar-1-wrap {
+   // width: 100%;
+   background: $color-charcoal;
+   // height: 61px;
+   margin: 0;
+   color: $color-white;
+   font-family: $font-headings;
+   font-size: 11px;
+   // line-height: 1em;
+   // clear: both;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+#navbar-1 {
+   width: 1100px;
+   margin: 0 auto;
+   padding: 0;
+   display: block;
+}
+#navbar-1-left, #navbar-2-left {
+   margin-left: 170px;
+   padding: 0;
+   float: left;
+}
+#navbar-1-right, #navbar-2-right {
+   margin: 0;
+   padding: 0;
+   text-transform: none;
+   float: right;
+}
+#navbar-1-right {
+   color: #FFFFFF;
+   font-size: 13px;  
+}
+#navbar-1-right a, #navbar-1-right a:visited {
+   color: #FFFFFF;
+   text-decoration: none;
+}
+#navbar-1-right a:hover {
+   color: #59B2B2;
+   text-decoration: none;
+}
+#navbar-1-right.navbar-right-text {
+   padding: 10px 10px 0 0;
+}
+#navbar-1-right.navbar-right-search {
+   padding: 15px 25px 0 0;
+}
+#nav-1, #nav-2 {
+   margin: 0;
+   padding: 0;
+}
+#nav-1 ul, #nav-2 ul {
+   margin: 0;
+   padding: 0;
+   float: right;
+   list-style: none;
+}
+#nav-1 li, #nav-2 li {
+   margin: 0;
+   padding: 0;
+   float: left;
+   list-style: none;
+}
+#nav-1 li a, #nav-1 li a:link, #nav-1 li a:visited {
+   margin: 0;
+   padding: 25px;
+   color: #FFFFFF;
+   text-decoration: none;
+   display: block;
+   position: relative;
+}
+
+#nav-1 li a.sf-with-ul {
+   padding-right: 35px;
+}
+#nav-1 li a .sf-sub-indicator {
+   top: 25px;
+   right: 25px;
+   position: absolute;
+   float: right;
+   display: block;
+   overflow: hidden;
+}
+#nav-1 li li a .sf-sub-indicator {
+   top: 11px;
+   right: 10px;
+}
+#nav-1 li li a, #nav-1 li li a:link, #nav-1 li li a:visited {
+   background: #222222;
+   width: 150px;
+   border-top: 0;
+   border-right: 1px solid #E8E8E8;
+   border-bottom: 1px solid #E8E8E8;
+   border-left: 1px solid #E8E8E8;
+   margin: 0 0 0 0px;
+   padding: 11px 10px 11px 10px;
+   color: #FFFFFF;
+   text-decoration: none;
+   float: none;
+}
+#nav-1 li li a:hover, #nav-1 li li a:active {
+   background: #222222;
+   color: #59B2B2;
+   text-decoration: none;
+}
+#nav-1 li ul {
+   width: 175px;
+   height: auto;
+   margin: 0;
+   padding: 0;
+   z-index: 9999;
+   left: -999em;
+   position: absolute;
+}
+#nav-1 li ul ul {
+   margin: -34px 0 0 171px;
+}
+#nav-1 li:hover ul ul, #nav-2 li:hover ul ul, #nav-1 li:hover ul ul ul, #nav-2 li:hover ul ul ul {
+   left: -999em;
+}
+#nav-1 li:hover ul, #nav-1 li.sfHover ul, #nav-2 li:hover ul, #nav-2 li.sfHover ul, #nav-1 li li:hover ul, #nav-2 li li:hover ul, #nav-1 li li li:hover ul, #nav-2 li li li:hover ul {
+   left: auto;
+}
+#nav-1 li:hover, #nav-1 li.sfHover, #nav-2 li:hover, #nav-2 li.sfHover {
+   position: static;
+}
+#nav-1 li.current_page_item a, #nav-1 li.current-menu-item a, #nav-1 li.current-cat a {
+   background: transparent;
+   color: #59B2B2;
+   text-decoration: none;
+}
+
+
+/*** Responsive Dropdown Navbars ***/
+
+#dropdown-nav-1-wrap, #dropdown-nav-2-wrap {
+   display: none;
+}
+
+.nav-1-chosen-select, .nav-2-chosen-select {
+   width: 100%;
+   margin: 0;
+   padding: 7px;
+}
+
+.nav-1-chosen-select {
+   font-size: 11px;
+   
+}
+
+.nav-2-chosen-select {
+   background: #FFFFFF;
+   font-size: 14px;
+   
+}

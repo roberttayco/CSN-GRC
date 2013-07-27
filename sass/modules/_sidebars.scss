@@ -1,19 +1,19 @@
-
-
-
 #sidebar-1-wrap .widget-wrap {
     background-color: $color-medium-beige;
     border: solid 1px #ddd;
     margin-top: 20px;
 }
 
-#sidebar-1-wrap .widget-wrap p, #sidebar-1-wrap .widget-wrap ul {
-padding: 5px 15px;
+#sidebar-1-wrap .widget-wrap p,
+#sidebar-1-wrap .widget-wrap ul {
+  padding: 5px 15px;
 }
 
-#sidebar-1-wrap h3, #sidebar-1-wrap h4, #sidebar-1-wrap h5, #sidebar-1-wrap h6 {
-padding: 5px 15px;
-margin: 0;
+#sidebar-1-wrap {
+  h3,  h4,  h5, h6 {
+    padding: 5px 15px;
+    // margin: 0;
+  }
 }
 
 .right-sidebar #sidebar-1-wrap {

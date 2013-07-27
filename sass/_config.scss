@@ -16,6 +16,8 @@ $color-accent2: #277f7f;     // teal
 $color-accent1-light: #d94941; // light red
 $color-accent2-light: #369998; // teal
 
+$color-overlay-black: rgba(0,0,0,.7);
+
 
 // below are older colors that need to be changed
 $color-gray-dk: #6c7880;
@@ -65,10 +67,14 @@ $transition-duration: 250ms;
 
 @mixin transition-color($duration) {
    -webkit-transition: color $duration linear;
+      -moz-transition: color $duration linear;
+        -o-transition: color $duration linear;
            transition: color $duration linear;
 }
 @mixin transition-bg($duration) {
    -webkit-transition: background $duration linear;
+      -moz-transition: background $duration linear;
+        -o-transition: background $duration linear;
            transition: background $duration linear;
 }
 
